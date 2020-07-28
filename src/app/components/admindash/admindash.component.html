@@ -1,0 +1,59 @@
+<body id="bo">
+    
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3 style="color: white;">INCEPTION WAVE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">Profile</a>
+                </li>
+                <li>
+                    <a href="#">Tasks</a>
+                </li>
+                <li>
+                    <a href="#">Need Help?</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="content">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light bg-light navv">
+                    <a class="navbar-brand" href="#">
+                      <img src="../../../assets/img.jpg" width="40" height="40" class="d-inline-block align-top" style="margin-left: 10px;margin-top: -10px;">
+                      <p class="navit">INCEPTION WAVE</p>
+                    </a>
+                    <a class="navbar-brand" routerLink="/adminprofile">
+                        <img src="../../../assets/img2.png" width="40" height="40" class="d-inline-block align-top" style="margin-left: 0px;margin-top: -10px;">
+                        <p class="navit">PROFILE</p>
+                      </a>
+                  </nav>
+                <hr style="border: 1px black solid;margin-left: 230px;width: 1230px;">
+        </div>
+        <br>
+        <div class="card" style="width: 77rem; min-height: 42rem;margin-left: 240px;margin-top: -40px;">
+            <h1 style="text-align: center;margin-top: 20px;">INTERNSHIP TASKS</h1>
+            <div style="margin-top: 70px;">
+                <ul >
+                    <li class="card tname"*ngFor="let user of users1"><a class="atname" routerLink="/eachintern"><b>{{user.username}}</b></a></li>
+                    <!-- <li class="card tname"><a class="atname" routerLink="/eachintern"><b>Intern name 2</b></a></li> -->
+                </ul>
+            </div>
+      </div>
+    </div>
+
+    <!--
+        <ul>
+                    <li class="card tname"><a class="atname" routerLink="/task"><b>Task 1</b></a></li>
+                    <li class="card tname"><a class="atname" routerLink="/task"><b>Task 2</b></a></li>
+                    <li class="card tname"><a class="atname" routerLink="/task"><b>Task 3</b></a></li>
+                    <li class="card tname"><a class="atname" routerLink="/task"><b>Task 4</b></a></li>
+                    <li class="card tname"><a class="atname" routerLink="/task"><b>Task 5</b></a></li>
+                    <li class="card tname"><a class="atname" routerLink="/task"><b>Task 6</b></a></li>
+                    <li class="card tname"><a class="atname" routerLink="/task"><b>Task 7</b></a></li>
+                </ul> 
+    -->

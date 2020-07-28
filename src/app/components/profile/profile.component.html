@@ -1,0 +1,73 @@
+
+<body id="bo">
+    
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3 style="color: white;">INCEPTION WAVE</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">Profile</a>
+                </li>
+                <li>
+                    <a href="#">Tasks</a>
+                </li>
+                <li>
+                    <a href="#">Need Help?</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="content">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light bg-light navv" >
+                    <a class="navbar-brand" href="#">
+                      <img src="../../../assets/img.jpg" width="40" height="40" class="d-inline-block align-top" style="margin-left: 10px;margin-top: -10px;">
+                      <p class="navit">INCEPTION WAVE</p>
+                    </a>
+                    <a class="navbar-brand" routerLink="/dashboard">
+                        <img src="../../../assets/dash.PNG" width="40" height="40" class="d-inline-block align-top" style="margin-left: 0px;margin-top: -10px;">
+                        <p class="navit">DASHBOARD</p>
+                    </a>
+                  </nav>
+                  <hr style="border: 1px black solid;margin-left: 35px;width: 1420px;">
+                <button type="button" id="sidebarCollapse" class="btn btn-info" style="margin-left: -10px;margin-top: 0px;">
+                	<i class="fas fa-align-left"></i>
+                </button>
+        </div>
+        <div class="card" style="width: 78rem; min-height: 42rem;margin-left: 240px;margin-top: -40px;">
+            <h1 style="text-align: center;margin-top: 20px;">MY PROFILE</h1>
+            <br>
+            <h3 style="text-align: center;margin-top: 20px;">USERNAME</h3>
+            <div class="pfile"  *ngFor="let user of users" style="margin-left: 300px;">
+                <div>
+                    <br><br>
+                    <p><b>{{user.regno}}</b></p>
+                    <br>
+                    <p><b>Username:{{user.username}} </b></p>
+                    <br>
+                    <p><b>Email:{{user.email}}</b></p>
+                    <br>
+                    <p><b>Joining Date: 18/03/2020 </b></p>
+                    <br>
+                    <p><b>Mentor Name: {{user.options}} </b></p>
+                    <br><br>
+                </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
+<!--
+<h1>Profiles</h1>
+
+<ul>
+  <li *ngFor="let user of users">
+    <p class="name">{{ user.username }}</p>
+    <p class="name">{{ user.email }}</p>
+    <p class="name">{{ user.regno }}</p>
+  </li>
+</ul>-->
