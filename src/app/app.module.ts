@@ -54,12 +54,12 @@ import {TokenInterceptorService} from './token-interceptor.service'
     HttpClientModule,
     FormsModule
   ],
-  providers: [AuthGuard,AdminauthGuard/*,
+  providers: [AuthGuard,AdminauthGuard,
   {
     provide:HTTP_INTERCEPTORS,
     useClass:TokenInterceptorService,
     multi:true
-  }*/],
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

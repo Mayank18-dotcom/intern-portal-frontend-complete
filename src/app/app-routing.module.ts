@@ -24,7 +24,7 @@ const routes: Routes = [
   {path:'signup',component:SignupComponent},
   {path:'land',component:LandingComponent},
   {path:'profile',component:ProfileComponent},
-  {path:'dashboard',component:DashboardComponent,canActivate:[AuthGuard]},
+  {path:'dashboard',component:DashboardComponent,/*canActivate:[AuthGuard]*/},
   {path:'list/:id',component:TasksComponent},
   {path:'',component:FirstComponent},
   {path:'admindash',component:AdmindashComponent,canActivate:[AdminauthGuard]},
