@@ -20,7 +20,7 @@ export class AdminsignupComponent implements OnInit {
         window.localStorage.setItem('un', JSON.stringify(res.admin.username))
         window.localStorage.setItem('ue', JSON.stringify(res.admin.email))
         window.localStorage.setItem('ureg', JSON.stringify(res.admin.regno))
-        this.router.navigate(['/admindash'])
+        this.router.navigate(['/admindash',{regno:res.admin.regno}])
       },
       (err)=>console.log(err)
     )
