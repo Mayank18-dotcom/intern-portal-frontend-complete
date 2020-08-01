@@ -23,18 +23,18 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
   {path:'land',component:LandingComponent},
-  {path:'profile',component:ProfileComponent},
-  {path:'dashboard',component:DashboardComponent,/*canActivate:[AuthGuard]*/},
-  {path:'list/:id',component:TasksComponent},
+  {path:'profile',component:ProfileComponent,canActivate:[AuthGuard]},
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthGuard]},
+  {path:'list/:id',component:TasksComponent,canActivate:[AuthGuard]},
   {path:'',component:FirstComponent},
   {path:'admindash',component:AdmindashComponent,canActivate:[AdminauthGuard]},
   {path:'adminlanding',component:AdminlandingComponent},
   {path:'adminsignup',component:AdminsignupComponent},
   {path:'adminlogin',component:AdminloginComponent},
-  {path:'eachintern',component:EachinternComponent},
-  {path:'admintask/:id',component:AdmintaskComponent},
-  {path:'addtask',component:AddtaskComponent},
-  {path:'adminprofile',component:AdminprofileComponent}
+  {path:'eachintern',component:EachinternComponent,canActivate:[AdminauthGuard]},
+  {path:'admintask',component:AdmintaskComponent,canActivate:[AdminauthGuard]},
+  {path:'addtask',component:AddtaskComponent,canActivate:[AdminauthGuard]},
+  {path:'adminprofile',component:AdminprofileComponent,canActivate:[AdminauthGuard]}
 ];
 
 @NgModule({

@@ -39,8 +39,10 @@
             <h1 style="text-align: center;margin-top: 20px;">INTERNSHIP TASKS</h1>
             <div style="margin-top: 70px;">
                 <ul >
-                    <li class="card tname"*ngFor="let user of users1"><a class="atname" routerLink="/admintask//{{user._id}}"><b>{{user.taskname}}</b><b style="margin-left: 300px;">{{user.enddate}}</b><b style="margin-left: 300px;"> {{user.complete}}</b></a></li>
-                    <!-- <li class="card tname"><a class="atname" href="./tasks.html" routerLink="/admintask"><b>Task 2</b><b style="margin-left: 300px;">Deadline: DD/MM/YYYY</b><b style="margin-left: 300px;">Status: Pending</b></a></li>
+                    
+                    <li class="card tname"*ngFor="let user of users1"><a class="atname" (click)="eacht(user)"><b>{{user.taskname}}</b><b style="margin-left: 300px;">{{user.enddate}}</b><b style="margin-left: 300px;"> {{user.complete}}</b></a></li>
+                    <!--
+                     <li class="card tname"><a class="atname" href="./tasks.html" routerLink="/admintask"><b>Task 2</b><b style="margin-left: 300px;">Deadline: DD/MM/YYYY</b><b style="margin-left: 300px;">Status: Pending</b></a></li>
                     <li class="card tname"><a class="atname" href="./tasks.html" routerLink="/admintask"><b>Task 3</b><b style="margin-left: 300px;">Deadline: DD/MM/YYYY</b><b style="margin-left: 300px;">Status: Pending</b></a></li> -->
                     <a class="tname btn" routerLink="/addtask" style="width: 150px;padding-top: 10px;">Add New Task</a>
                 </ul>

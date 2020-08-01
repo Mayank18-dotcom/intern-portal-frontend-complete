@@ -20,13 +20,9 @@ export class AppService {
   {
    return this.http.post(this.url+'/user/login',user);
   }
-  profile()
+  dashboard(username:any)
   {
-    return this.http.get(`${this.url}/profile`);
-  }
-  dashboard()
-  {
-    return this.http.get(this.url+'/user/dashboard');
+    return this.http.get(this.url+'/user/dashboard/'+username);
   }
   taskone(id:any)
   {
@@ -35,6 +31,22 @@ export class AppService {
   getToken()
   {
     return window.localStorage.getItem('token')
+  }
+  getuserun()
+  {
+    return window.localStorage.getItem('un')
+  }
+  getuserue()
+  {
+    return window.localStorage.getItem('ue')
+  }
+  getuserureg()
+  {
+    return window.localStorage.getItem('ureg')
+  }
+  getuseruopt()
+  {
+    return window.localStorage.getItem('uopt')
   }
   loggedIn()
   {
@@ -51,25 +63,21 @@ export class AppService {
   {
    return this.http.post(this.url+'/admin/login',admin);
   }
-  profileadm()
-  {
-    return this.http.get(`${this.url}/admin/profile`);
-  }
   addingtask(data)
   {
     return this.http.post(this.url+'/admin/addtask',data)
   }
-  admindashboard()
+  admindashboard(options:any)
   {
-    return this.http.get(`${this.url}/admin/dashboard`);
+    return this.http.get(this.url+'/admin/dashboard/'+options);
   }
-  interntask()
+  eachintern(username:any)
   {
-    return this.http.get(`${this.url}/admin/dashboard/tasks`);
+    return this.http.get(this.url+'/admin/dashboard/tasks/'+username);
   }
   eachtask(id:any)
   {
-    return this.http.get(this.url+'/admin/dashboard/taskone'+"?id="+id);
+    return this.http.get(this.url+'/admin/dashboard/taskone/'+id);
   }
   approve(id:any){
     let body={

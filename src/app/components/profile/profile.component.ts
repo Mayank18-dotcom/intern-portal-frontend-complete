@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, OnDestroy } from '@angular/core';
-import {AppService} from '../../app.service'
+import {AppService} from '../../app.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -7,13 +8,20 @@ import {AppService} from '../../app.service'
   encapsulation: ViewEncapsulation.None,
 })
 export class ProfileComponent implements OnInit, OnDestroy {
+  uname: Object;
   users:Object;
-  constructor(private service:AppService) { }
+  uemail:Object;
+  uopt:Object;
+  ureg:Object;
+  constructor(private service:AppService,public router:Router) { }
   ngOnInit():void {
-    this.service.profile().subscribe(data=>{
-      this.users = data;
-      console.log(this.users);
-    })
+    this.uname = this.service.getuserun()
+    this.uemail = this.service.getuserue()
+    this.uopt = this.service.getuseruopt()
+    this.ureg = this.service.getuserureg()
+  }
+  dash(){
+    this.router.navigate(['/dashboard/:username',{username:this.uname}])
   }
   ngOnDestroy() {
 

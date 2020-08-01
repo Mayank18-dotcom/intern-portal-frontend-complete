@@ -9,11 +9,12 @@ export class AdminprofileComponent implements OnInit {
 
   constructor(private service:AppService) { }
   users:Object;
+  uname: Object;
+  uemail:Object;
+  ureg:Object;
   ngOnInit():void {
-    this.service.profileadm().subscribe(data=>{
-      this.users = data;
-      console.log(this.users);
-    })
+    this.uname = this.service.getuserun()
+    this.uemail = this.service.getuserue()
+    this.ureg = this.service.getuserureg()
   }
-
 }

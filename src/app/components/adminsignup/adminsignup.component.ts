@@ -12,11 +12,14 @@ export class AdminsignupComponent implements OnInit {
   
   ngOnInit() {
   }
-  registerUser(){
+  registerAdmin(){
     this.service.signupadmin(this.registerAdminData)
     .subscribe(
       (res:any) =>{
-        window.localStorage.setItem('token',res.token),
+        window.localStorage.setItem('token',res.token)
+        window.localStorage.setItem('un', JSON.stringify(res.admin.username))
+        window.localStorage.setItem('ue', JSON.stringify(res.admin.email))
+        window.localStorage.setItem('ureg', JSON.stringify(res.admin.regno))
         this.router.navigate(['/admindash'])
       },
       (err)=>console.log(err)

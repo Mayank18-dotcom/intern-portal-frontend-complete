@@ -16,7 +16,11 @@ export class SignupComponent implements OnInit {
     this.service.signup(this.registerUserData)
     .subscribe(
       (res:any) =>{
-        window.localStorage.setItem('token',res.token),
+        window.localStorage.setItem('token',res.token)
+        window.localStorage.setItem('un', JSON.stringify(res.user.username))
+        window.localStorage.setItem('ue', JSON.stringify(res.user.email))
+        window.localStorage.setItem('ureg', JSON.stringify(res.user.regno))
+        window.localStorage.setItem('uopt', JSON.stringify(res.user.options))
         this.router.navigate(['/dashboard'])
       },
       (err)=>console.log(err)

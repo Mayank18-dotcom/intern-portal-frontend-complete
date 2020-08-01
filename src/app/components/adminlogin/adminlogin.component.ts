@@ -15,7 +15,10 @@ export class AdminloginComponent implements OnInit {
     .subscribe(
       (res:any) => {
         window.localStorage.setItem('token', res.token)
-        this.router.navigate(['/admindash'])
+        window.localStorage.setItem('un', JSON.stringify(res.admin.username))
+        window.localStorage.setItem('ue', JSON.stringify(res.admin.email))
+        window.localStorage.setItem('ureg',(res.admin.regno))
+        this.router.navigate(['/admindash',{regno:res.admin.regno}])
       },
       err => console.log(err)
     ) 
