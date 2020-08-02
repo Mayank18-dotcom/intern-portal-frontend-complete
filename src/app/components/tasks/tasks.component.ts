@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
 import {AppService} from '../../app.service'
 import { Router, ActivatedRoute } from '@angular/router';
-
+import {Location} from '@angular/common';
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -10,7 +10,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class TasksComponent implements OnInit {
   task:any;
   id:any;
-  constructor(private rs:AppService,public router:ActivatedRoute) {
+  yes:any;
+  constructor(private rs:AppService,public router:ActivatedRoute,public rt:Router,private _location: Location) {
     this.router.params.subscribe(params=>{
       this.id=params.id;
     })
@@ -28,5 +29,13 @@ export class TasksComponent implements OnInit {
     ),
     (error)=>console.log(error);
   }
-
+  loggout()
+  {
+    localStorage.clear();
+    this.rt.navigate(['/login'])
+  }
+  dash()
+  {
+    this._location.back();
+  }
 }

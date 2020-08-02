@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class AdminloginComponent implements OnInit {
   loginAdminData = {}
+  yes:any;
+  yess:any;
   constructor(private service:AppService,public router:Router) { }
   loginAdmin () {
     this.service.loginadmin(this.loginAdminData)
@@ -22,6 +24,18 @@ export class AdminloginComponent implements OnInit {
       },
       err => console.log(err)
     ) 
+  }
+  allog(){
+    this.yes = this.service.getuserureg()
+    this.yess = this.service.loggedIn()
+    if(this.yess)
+    {
+      this.router.navigate(['/admindash',{regno:JSON.parse(this.yes)}])
+    }
+    else{
+      alert("You are not loggedIn. Try to loggin again.")
+      this.router.navigate(['/adminlogin'])
+    }
   }
   ngOnInit() {
   }

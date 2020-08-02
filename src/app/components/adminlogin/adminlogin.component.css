@@ -13,7 +13,14 @@ body {
 a {
   text-decoration: none;
 }
-
+.alert {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  margin-left: 230px;
+  width: 1230px;
+  margin-bottom: 40px;
+}
 .container-shadow {
   position: absolute;
   width: 525px;

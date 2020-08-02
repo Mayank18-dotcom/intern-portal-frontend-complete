@@ -11,7 +11,8 @@ export class DashboardComponent implements OnInit,OnDestroy {
   users:any
   tasks:Object;
   username:any;
-  constructor(private service:AppService,public router:ActivatedRoute) { 
+  yes:any;
+  constructor(private service:AppService,public router:ActivatedRoute,public rt:Router) { 
     this.router.params.subscribe(params=>{
       this.username=params.username;
     })
@@ -22,6 +23,15 @@ export class DashboardComponent implements OnInit,OnDestroy {
       this.tasks = data;
       console.log(this.tasks);
     })
+  }
+  loggout()
+  {
+    localStorage.clear();
+    this.rt.navigate(['/login'])
+  }
+  dash()
+  {
+    this.rt.navigate(['/dashboard',{username:JSON.parse(this.yes)}])
   }
   ngOnDestroy() {
 

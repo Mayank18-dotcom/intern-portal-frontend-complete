@@ -27,6 +27,11 @@ export class AdmindashComponent implements OnInit {
     console.log(uu.username);
     this.rt.navigate(['/eachintern',{username:uu.username}])
   }
+  loggout()
+  {
+    localStorage.clear();
+    this.rt.navigate(['/adminlogin'])
+  }
   ngOnDestroy() {
 
   }

@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   loginUserData = {}
+  yes:any;
+  yess:any;
   constructor(private service:AppService,public router:Router) { }
   loginUser () {
     this.service.login(this.loginUserData)
@@ -24,18 +26,19 @@ export class LoginComponent implements OnInit {
       err => console.log(err)
     ) 
   }
+  allog(){
+    this.yes = this.service.getuserun()
+    this.yess = this.service.loggedIn()
+    if(this.yess)
+    {
+      this.router.navigate(['/dashboard',{username:JSON.parse(this.yes)}])
+    }
+    else{
+      alert("You are not loggedIn. Try to loggin again.")
+      this.router.navigate(['/login'])
+    }
+  }
   ngOnInit() {
   }
 
 }
-
-/*
-this.service.login(data).subscribe((result)=>{
-  if(result){
-    this.router.navigate(['/dashboard']);
-  }
-  else{
-    console.log("Wrong Credentials");
-    this.router.navigate(['/login']);
-  }
-})*/

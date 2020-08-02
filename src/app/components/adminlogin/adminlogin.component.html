@@ -1,4 +1,10 @@
 <body>
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <strong style="margin-left: 20px;">
+      If already logged in: Click Here: <button type="button" (click)="allog()" style="float: right;margin-top: -5px;margin-right: 100px;background-color: white;">GO to Dashboard</button>
+    </strong>
+  </div>
     <div class="container-shadow"></div>
     <div class="container">
       <div class="wrap">
@@ -20,7 +26,7 @@
           </form>
           <br>
           <label  style="margin-left: 90px;">Not Yet Registered?</label>
-          <a routerLink="/sign" style="margin-left: 160px;color: whitesmoke;font-size: 20px;">SIGNUP</a>
+          <a routerLink="/adminsignup" style="margin-left: 160px;color: whitesmoke;font-size: 20px;">SIGNUP</a>
         </div>
       </div>
     </div>

@@ -9,27 +9,23 @@
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="#">Profile</a>
+                    <a (click)="dash()">Dashboard</a>
                 </li>
                 <li>
-                    <a href="#">Tasks</a>
-                </li>
-                <li>
-                    <a href="#">Need Help?</a>
+                    <a onclick="alert('Chat not added')">CHAT</a>
                 </li>
             </ul>
         </nav>
         
         <div id="content">
             <div class="container-fluid">
-                <nav class="navbar navbar-light bg-light navv" >
+                <nav class="navbar navbar-light bg-light navv">
                     <a class="navbar-brand" href="#">
                       <img src="../../../assets/img.jpg" width="40" height="40" class="d-inline-block align-top" style="margin-left: 10px;margin-top: -10px;">
                       <p class="navit">INCEPTION WAVE</p>
                     </a>
-                    <a class="navbar-brand" (click)="dash()">
-                        <img src="../../../assets/dash.PNG" width="40" height="40"  class="d-inline-block align-top" style="margin-left: 0px;margin-top: -10px;">
-                        <p class="navit">DASHBOARD</p>
+                    <a class="navbar-brand">
+                        <button style="margin-top: 5px;" class="btn" (click)="loggout()">LOGOUT</button>
                     </a>
                   </nav>
                   <hr style="border: 1px black solid;margin-left: 35px;width: 1420px;">

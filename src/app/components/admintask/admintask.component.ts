@@ -38,6 +38,15 @@ export class AdmintaskComponent implements OnInit {
       this._location.back();
     })
   }  
+  loggout()
+  {
+    localStorage.clear();
+    this.rt.navigate(['/adminlogin'])
+  }
+  dash()
+  {
+    this._location.back();
+  }
 
   }
 
