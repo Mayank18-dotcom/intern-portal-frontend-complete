@@ -1,13 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router } from '@angular/router';
+
+export class User {
+  public regno: any;
+  public username: any;
+  public password: any;
+  public options:any;
+  public email: string;
+}
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  registerUserData = {}
+  registerUserData = new User();
   constructor(private service:AppService,public router:Router) { }
   
   ngOnInit() {

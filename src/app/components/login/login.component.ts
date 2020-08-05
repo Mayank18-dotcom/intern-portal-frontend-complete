@@ -2,13 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router } from '@angular/router';
 
+export class User {
+  public username: any;
+  public password: any;
+}
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  loginUserData = {}
+  loginUserData = new User();
+  
   yes:any;
   yess:any;
   constructor(private service:AppService,public router:Router) { }

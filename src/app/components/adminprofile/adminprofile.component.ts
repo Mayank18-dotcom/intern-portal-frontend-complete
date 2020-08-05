@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AppService} from '../../app.service'
+import {AppService} from '../../app.service';
+import {Location} from '@angular/common';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-adminprofile',
   templateUrl: './adminprofile.component.html',
@@ -7,7 +9,7 @@ import {AppService} from '../../app.service'
 })
 export class AdminprofileComponent implements OnInit {
 
-  constructor(private service:AppService) { }
+  constructor(private service:AppService,private _location: Location,public router:Router) { }
   users:Object;
   uname: Object;
   uemail:Object;
@@ -16,5 +18,14 @@ export class AdminprofileComponent implements OnInit {
     this.uname = this.service.getuserun()
     this.uemail = this.service.getuserue()
     this.ureg = this.service.getuserureg()
+  }
+  dash()
+  {
+    this._location.back();
+  }
+  loggout()
+  {
+    localStorage.clear();
+    this.router.navigate(['/login'])
   }
 }

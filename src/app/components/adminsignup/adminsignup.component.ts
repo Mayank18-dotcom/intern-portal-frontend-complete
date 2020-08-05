@@ -1,13 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router } from '@angular/router';
+
+export class Admin {
+  public regno: any;
+  public username: any;
+  public password: any;
+  public email: string;
+}
+
 @Component({
   selector: 'app-adminsignup',
   templateUrl: './adminsignup.component.html',
   styleUrls: ['./adminsignup.component.css']
 })
 export class AdminsignupComponent implements OnInit {
-  registerAdminData = {}
+  registerAdminData = new Admin();
   constructor(private service:AppService,public router:Router) { }
   
   ngOnInit() {

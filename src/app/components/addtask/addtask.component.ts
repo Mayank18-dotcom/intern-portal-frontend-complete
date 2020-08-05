@@ -13,7 +13,7 @@ export class AddtaskComponent implements OnInit {
   {
     this.service.addingtask(data).subscribe((result)=>{
       console.warn(result);
-      this.router.navigate(['/eachintern']);
+      this._location.back();
     })
   }
   loggout()

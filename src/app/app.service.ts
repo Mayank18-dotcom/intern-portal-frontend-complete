@@ -6,7 +6,7 @@ import { users } from './users';
 })
 export class AppService {
 
-  url:string="http://localhost:3000";
+  url:string="https://iwsc-backend.herokuapp.com";
 
   constructor(private http:HttpClient) { 
   }

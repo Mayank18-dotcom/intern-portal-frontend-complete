@@ -41,8 +41,8 @@
             <h1 style="text-align: center;margin-top: 20px;">{{task.taskname}}</h1>
             <h3 style="float: left;margin-left: 100px;">Deadline: {{task.enddate}}</h3>
             <h3 style="float: right;margin-left: 900px;margin-top: -40px;">Status: {{task.complete}}</h3>
-            <a class="tname btn" (click)="approve(task._id)" style="width: 150px;padding-top: 10px;margin-left: 450px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);"(click)="approve(user._id)" type="button ">Completed</a>
-            <a class="tname btn" (click)="disapprove(task._id)" style="width: 150px;padding-top: 10px;margin-left: 650px;background-color: red;margin-top: -48px;border-color: red;"(click)="reject(user._id)" type="button ">Incompleted</a>
+            <a class="tname btn" (click)="approve(task._id)" style="width: 150px;padding-top: 10px;margin-left: 450px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);" type="button ">Completed</a>
+            <a class="tname btn" (click)="disapprove(task._id)" style="width: 150px;padding-top: 10px;margin-left: 650px;background-color: red;margin-top: -48px;border-color: red;" type="button ">Incompleted</a>
             <div class="pfile1" style="margin-left: 150px">
                 <br><br>
                 <p>

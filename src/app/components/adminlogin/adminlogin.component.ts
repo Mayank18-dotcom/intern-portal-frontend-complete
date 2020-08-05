@@ -2,13 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router } from '@angular/router';
 
+export class Admin {
+  public username: any;
+  public password: any;
+}
+
 @Component({
   selector: 'app-adminlogin',
   templateUrl: './adminlogin.component.html',
   styleUrls: ['./adminlogin.component.css']
 })
 export class AdminloginComponent implements OnInit {
-  loginAdminData = {}
+  loginAdminData = new Admin();
   yes:any;
   yess:any;
   constructor(private service:AppService,public router:Router) { }

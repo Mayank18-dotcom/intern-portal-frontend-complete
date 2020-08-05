@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
+import {SidebarComponent} from './components/sidebar/sidebar.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { TasksComponent } from './components/tasks/tasks.component';
@@ -26,6 +27,7 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
 import { AuthGuard } from './auth.guard';
 import {AdminauthGuard} from './adminauth.guard'
 import {TokenInterceptorService} from './token-interceptor.service'
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import {TokenInterceptorService} from './token-interceptor.service'
     AdminprofileComponent,
     AdmintaskComponent,
     AddtaskComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
