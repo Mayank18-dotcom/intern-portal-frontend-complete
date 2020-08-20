@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router } from '@angular/router';
-
+import { HttpErrorResponse } from '@angular/common/http';
 export class Admin {
   public regno: any;
   public username: any;
@@ -30,7 +30,14 @@ export class AdminsignupComponent implements OnInit {
         window.localStorage.setItem('ureg', JSON.stringify(res.admin.regno))
         this.router.navigate(['/admindash',{regno:res.admin.regno}])
       },
-      (err)=>console.log(err)
+      (err)=>{
+        if(err instanceof HttpErrorResponse){
+          if(err.status === 400){
+            console.log(err)
+            alert(err.error);
+          }
+        }
+      }
     )
   }
 }

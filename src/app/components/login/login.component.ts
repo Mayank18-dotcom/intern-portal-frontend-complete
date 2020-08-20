@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router } from '@angular/router';
-
+import {HttpErrorResponse} from '@angular/common/http';
 export class User {
   public username: any;
   public password: any;
@@ -29,7 +29,19 @@ export class LoginComponent implements OnInit {
         window.localStorage.setItem('uopt', JSON.stringify(res.user.options))
         this.router.navigate(['/dashboard',{username:res.user.username}])
       },
-      err => console.log(err)
+      (err)=>{
+        if(err instanceof HttpErrorResponse){
+          if(err.status === 400){
+            console.log(err)
+            alert(err.error);
+          }
+        }
+        if(err instanceof HttpErrorResponse) {
+          if(err.status === 401){
+            alert(err.error);
+          }
+        }
+      }
     ) 
   }
   allog(){

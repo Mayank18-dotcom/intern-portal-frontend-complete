@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router } from '@angular/router';
-
+import { HttpErrorResponse } from '@angular/common/http';
+import * as EmailValidator from 'email-validator';
 export class User {
   public regno: any;
   public username: any;
@@ -25,6 +26,7 @@ export class SignupComponent implements OnInit {
     this.service.signup(this.registerUserData)
     .subscribe(
       (res:any) =>{
+        EmailValidator.validate(this.registerUserData.email)
         window.localStorage.setItem('token',res.token)
         window.localStorage.setItem('un', JSON.stringify(res.user.username))
         window.localStorage.setItem('ue', JSON.stringify(res.user.email))
@@ -32,7 +34,14 @@ export class SignupComponent implements OnInit {
         window.localStorage.setItem('uopt', JSON.stringify(res.user.options))
         this.router.navigate(['/dashboard'])
       },
-      (err)=>console.log(err)
+      (err)=>{
+        if(err instanceof HttpErrorResponse){
+          if(err.status === 400){
+            console.log(err)
+            alert(err.error);
+          }
+        }
+      }
     )
   }
 }

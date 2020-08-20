@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #dbd1c7;
+  background-color: #6d7fcc;
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
@@ -277,6 +277,7 @@ footer .fp a:hover {
     font-size: 10px;
   }
   .altbtn{
+    margin-top: -2px;
     margin-right: 10px;
   }
   .wrap {
@@ -298,11 +299,6 @@ footer .fp a:hover {
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
 a, a:hover, a:focus {
     color: inherit;
     text-decoration: none;
