@@ -92,4 +92,12 @@
       opacity: 1;
     }
   }
-  
+
+@media screen and (max-width:321px) {
+  .content h1 {
+    font-size: 40px;
+  }
+  .content p {
+    font-size: 30px;
+  }
+}

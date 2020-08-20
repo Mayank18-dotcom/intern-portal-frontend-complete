@@ -1,14 +1,15 @@
 /*
-    rgb(44, 178, 255)
-*/
-/*
     DEMO STYLE
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+
 body {
+    min-height: 50rem;
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 a, a:hover, a:focus {
     color: inherit;
@@ -27,7 +28,7 @@ a, a:hover, a:focus {
     left: -5px;
     min-height: 47rem;
     z-index: 999;
-    background: rgb(44, 178, 255);
+    background: rgb(255, 187, 0);
     color: black;
     transition: all 0.3s;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -54,7 +55,7 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: rgb(44, 178, 255);
+    color: rgb(255, 187, 0);
     background: #fff;
 }
 
@@ -100,7 +101,7 @@ ul.CTAs a {
 }
 a.download {
     background: #fff;
-    color: rgb(44, 178, 255);
+    color: rgb(255, 187, 0);
 }
 a.article, a.article:hover {
     background: #6d7fcc !important;
@@ -122,8 +123,8 @@ a.article, a.article:hover {
 }
 
 .btn{
-    background-color: rgb(44, 178, 255);
-    border-color: rgb(44, 178, 255);
+    background-color: rgb(255, 187, 0);
+    border-color: rgb(255, 187, 0);
 }
 
 .navv{
@@ -180,11 +181,105 @@ a.article, a.article:hover {
     CONTENT STYLE TASKS
 ----------------------------------------------------- */
 
-.pfile1{
+.pfile{
     text-align: center;
     border: 1px grey solid;
     width: 1000px;
     margin-top: 70px;
     margin-left: 200px;
     background-color: rgb(255, 217, 0);
+    font-size: 20px;
+}
+.hrs{
+    border: 1px black solid;margin-left: 35px;width: 1420px;
+}
+.card1{
+    width: 89rem; min-height: 42rem;margin-left: 130px;margin-top: -40px;
+    background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media (max-width: 330px) {
+    .hrs{
+        margin-left: -20px;
+        width: 280px;
+    }
+    .card1{
+        width: 20rem; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .atname{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 305px;
+        font-size: 15px;
+    }
+    .bbtn{
+        margin-left: -55px;
+        margin-bottom: 20px;
+    }
+    .btn{
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    .btn1{
+        margin-left: -100px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.imgg{
+    margin-left: -20px;margin-top: -10px;
+}
+.nnaavv{
+    margin-top:-40px;
+}
+.navi{
+    margin-top:30px;
+    margin-bottom: -20px;
+}
+.navi1{
+    margin-top:20px;
+    margin-bottom: -20px;
+}
+.titles{
+    margin-top:30px;
+    margin-bottom: -20px;
+    width: 200px;
+}
+
+.btn{
+    background-color: rgb(255, 187, 0);
+    border-color: rgb(255, 187, 0);
+    font-size: 18px;
+}
+.btn1{
+    margin-left: 50px;
+    background-color: red;
+    border-color: red;
+}
+.bbtn{
+    margin-top:20px;
+    margin-bottom: -20px;
+}
+@media (min-width: 1000px){
+    body{
+        position: relative;
+        min-width: 100%;
+        height: 54.8rem;
+    }
+    .bbtn{
+        margin-left: 1190px;
+    }
 }

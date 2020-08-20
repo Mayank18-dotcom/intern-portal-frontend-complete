@@ -1,6 +1,6 @@
 <body>
   <div class="container-shadow"></div>
-  <div class="container" style="height: 800px">
+  <div class="container" style="height: 830px">
     <div class="wrap" style="margin-top: -70px;">
       <div class="headings">
         <h1 style="text-align: center;color: whitesmoke;">SIGNUP</h1>
@@ -22,7 +22,7 @@
           <div class="form-group">
             <label for="profs">Please Select a mentor:</label>
             <br>
-            <select name="profs" id="profs" [(ngModel)]="registerUserData.options" style="background-color: aliceblue;color: black;width: 100px;margin-left: 150px;font-size: 20px;margin-top: -50px;width: 100px;height: 40px;">
+            <select name="profs" id="profs" [(ngModel)]="registerUserData.options" >
               <option style="font-size: 15px;" value="100503" name="options" >100503</option>
               <option style="font-size: 15px;" value="100507" name="options" >100507</option>
               <option style="font-size: 15px;" value="100511" name="options" >100511</option>
@@ -34,10 +34,10 @@
             <label>Email</label>
             <input type="email" name="email" id="email" [(ngModel)]="registerUserData.email" required>
           </div>
-          <button type="button" (click)="registerUser()" style="background-color: aliceblue;color: black;width: 100px;margin-left: 150px;font-size: 15px;">SIGNUP</button>
+          <button type="button" (click)="registerUser()" class="btnsign">SIGNUP</button>
         </form>
-        <label style="margin-left: 50px;">Already Registered Account?</label>
-        <a routerLink="/login" style="margin-left: 160px;color: whitesmoke;font-size: 20px;">Login</a>
+        <label class="nyr">Already Registered Account?</label>
+        <button type="button" routerLink="/login" class="log">Login</button>
       </div>
       <br>
     </div><br><br>

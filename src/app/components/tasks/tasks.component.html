@@ -1,54 +1,39 @@
-
+<body id="bo">
     
     <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3 style="color: white;">INCEPTION WAVE</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li>
-                    <a routerLink="/profile">Profile</a>
-                </li>
-                <li>
-                    <a (click)="dash()">Dashboard</a>
-                </li>
-                <li>
-                    <a onclick="alert('Chat not added')">CHAT</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <div id="content">
-            <div class="container-fluid">
-                <nav class="navbar navbar-light bg-light navv">
-                    <a class="navbar-brand" href="#">
-                      <img src="../../../assets/img.jpg" width="40" height="40" class="d-inline-block align-top" style="margin-left: 10px;margin-top: -10px;">
-                      <p class="navit">INCEPTION WAVE</p>
-                    </a>
-                    <a class="navbar-brand">
-                        <button style="margin-top: 5px;" class="btn" (click)="loggout()">LOGOUT</button>
-                    </a>
-                  </nav>
-                  <hr style="border: 1px black solid;margin-left: 35px;width: 1420px;">
-                <button type="button" id="sidebarCollapse" class="btn btn-info" style="margin-left: -10px;margin-top: 0px;">
-                	<i class="fas fa-align-left"></i>
-                </button>
+      <nav class="navbar navbar-expand-lg navbar-light nnaavv" style="background-color: #F0F8FF;">
+        <a class="navbar-brand navi" routerLink="/"><img src="../../../assets/logo.png"width="80" height="80"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top:40px;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav bbtn">
+            <button style="margin-top: 5px;" class="btn" (click)="dash()">DASHBOARD</button>
+            <button style="margin-top: 5px;" class="btn btn1" (click)="loggout()">LOGOUT</button>
+          </div>
         </div>
-        <div class="card" style="width: 78rem; min-height: 42rem;margin-left: 240px;margin-top: -40px;">
-            <h1 style="text-align: center;margin-top: 20px;">TASK  1</h1>
-
-            <div class="pfile1" style="margin-left: 120px;"> 
+      </nav>
+        <br><br><br>
+        <div class="card card1">
+            <h1 style="text-align: center;margin-top: 20px;">ABOUT THE TASK</h1>
+            <h3 class="date">Deadline: {{task.enddate}}</h3>
+            <h3 class="com">Status: {{task.complete}}</h3>
+            <br>
+            <div class="pfile">
                 <br><br>
-                
-                    <h4>{{task.taskname}}</h4>
-                    <h4>{{task.taskdetails}}</h4>
-                
+                <h1 style="text-transform:capitalize;">{{task.taskname}}</h1>   
+                <br><br>
+                <h4>DETAILS</h4>   
+                <p class="details">
+                    {{task.taskdetails}}
+                </p>
                 <br><br>
             </div>
       </div>
     </div>
+
+    <div class="overlay"></div>
+
 <!--
     Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).
                     [1] Web development can range from developing a simple single static page of plain text to complex web-based internet applications 

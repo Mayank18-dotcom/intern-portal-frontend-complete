@@ -1,56 +1,35 @@
 <body id="bo">
     
     <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3 style="color: white;">INCEPTION WAVE</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li>
-                    <a (click)="dash()">Back to all tasks</a>
-                </li>
-                <li>
-                    <a routerLink="/adminprofile">Profile</a>
-                </li>
-                <li>
-                    <a onclick="alert('Chat not added')">CHAT</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <div id="content">
-            <div class="container-fluid">
-                <nav class="navbar navbar-light bg-light navv">
-                    <a class="navbar-brand" href="#">
-                      <img src="../../../assets/img.jpg" width="40" height="40" class="d-inline-block align-top" style="margin-left: 10px;margin-top: -10px;">
-                      <p class="navit">INCEPTION WAVE</p>
-                    </a>
-                    <a class="navbar-brand">
-                        <button style="margin-top: 5px;" class="btn" (click)="loggout()">LOGOUT</button>
-                    </a>
-                  </nav>
-                  <hr style="border: 1px black solid;margin-left: 35px;width: 1420px;">
-                <button type="button" id="sidebarCollapse" class="btn btn-info" style="margin-left: -10px;margin-top: 0px;">
-                	<i class="fas fa-align-left"></i>
-                </button>
+      <nav class="navbar navbar-expand-lg navbar-light nnaavv" style="background-color: #F0F8FF;">
+        <a class="navbar-brand navi" routerLink="/"><img src="../../../assets/logo.png"width="80" height="80"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top:40px;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav bbtn">
+            <button style="margin-top: 5px;" class="btn" routerLink="/adminprofile">PROFILE</button>
+            <button style="margin-top: 5px;" class="btn btn1" (click)="loggout()">LOGOUT</button>
+          </div>
         </div>
-        
-        <div class="card" style="width: 78rem; min-height: 42rem;margin-left: 240px;margin-top: -40px;">
-            <h1 style="text-align: center;margin-top: 20px;">{{task.taskname}}</h1>
-            <h3 style="float: left;margin-left: 100px;">Deadline: {{task.enddate}}</h3>
-            <h3 style="float: right;margin-left: 900px;margin-top: -40px;">Status: {{task.complete}}</h3>
-            <a class="tname btn" (click)="approve(task._id)" style="width: 150px;padding-top: 10px;margin-left: 450px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);" type="button ">Completed</a>
-            <a class="tname btn" (click)="disapprove(task._id)" style="width: 150px;padding-top: 10px;margin-left: 650px;background-color: red;margin-top: -48px;border-color: red;" type="button ">Incompleted</a>
-            <div class="pfile1" style="margin-left: 150px">
+      </nav>
+        <br><br><br>
+        <div class="card card1">
+            <h1 style="text-align: center;margin-top: 20px; text-transform:capitalize;">ABOUT {{task.taskname}}</h1>
+            <h3 class="date">Deadline: {{task.enddate}}</h3>
+            <h3 class="com">Status: {{task.complete}}</h3>
+            <a class="tname btn compt" (click)="approve(task._id)" type="button ">Completed</a>
+            <a class="tname btn stat" (click)="disapprove(task._id)" type="button ">Incompleted</a>
+            <br>
+            <div class="pfile">
                 <br><br>
-                <p>
-                    <h4>Task Details</h4>
-                   <p> {{task.taskdetails}}</p>
-                <br><br><br>
+                <h1 style="text-transform:capitalize;">{{task.taskname}}</h1>   
+                <br><br>
+                <h4>DETAILS</h4>   
+                <p class="details">
+                    {{task.taskdetails}}
+                </p>
+                <br><br>
             </div>
-            <br><br>
       </div>
-      
     </div>

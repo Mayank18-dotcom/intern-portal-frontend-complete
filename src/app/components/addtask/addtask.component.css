@@ -1,14 +1,13 @@
 /*
-    rgb(44, 178, 255)
-*/
-/*
     DEMO STYLE
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: #6190E8;
+    min-height: 1050px;
 }
 a, a:hover, a:focus {
     color: inherit;
@@ -27,7 +26,7 @@ a, a:hover, a:focus {
     left: -5px;
     min-height: 47rem;
     z-index: 999;
-    background: rgb(44, 178, 255);
+    background: rgb(255, 187, 0);
     color: black;
     transition: all 0.3s;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -54,7 +53,7 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: rgb(44, 178, 255);
+    color: rgb(255, 187, 0);
     background: #fff;
 }
 
@@ -100,7 +99,7 @@ ul.CTAs a {
 }
 a.download {
     background: #fff;
-    color: rgb(44, 178, 255);
+    color: rgb(255, 187, 0);
 }
 a.article, a.article:hover {
     background: #6d7fcc !important;
@@ -121,16 +120,11 @@ a.article, a.article:hover {
     right: 0;
 }
 
-.btn{
-    background-color: rgb(44, 178, 255);
-    border-color: rgb(44, 178, 255);
-}
-
 .navv{
     background-color: white;
     margin-top: -10px;
     padding: 0%;
-    margin-left: 230px;
+    margin-left: 100px;
     width: 1230px;
 }
 .navit{
@@ -139,7 +133,18 @@ a.article, a.article:hover {
     margin-bottom: -5px;
     font-size: 16px;
 }
-
+.navit1{
+    margin-top: -31px;
+    margin-left: 700px;
+    margin-bottom: -5px;
+    font-size: 16px;
+}
+.navvv{
+    margin-left: 50px;
+}
+.navvv1{
+    margin-left: 90px;
+}
 /* ---------------------------------------------------
     CONTENT STYLE DASH
 ----------------------------------------------------- */
@@ -152,17 +157,67 @@ a.article, a.article:hover {
     margin-bottom: 40px;
 }
 .tname{
-    width: 70rem;
     height: 3rem;
     margin-left: 40px;
     margin-top: 40px;
+    width: 300px;border-color: white;
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .atname{
+    font-size: 20px;
     margin-top: 10px;
-    margin-left: 50px;
+    text-align: center;
+}
+.card1{
+    width: 89rem; min-height: 42rem;margin-left: 10px;margin-top: -40px;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+.hname{
+    text-align: center;margin-top: 20px;
+}
+.hrs{
+    border: 1px black solid;margin-left: 60px;width: 1350px;
+}
+.imgg{
+    margin-left: -20px;margin-top: -10px;
+}
+.nnaavv{
+    margin-top:-40px;
+}
+.navi{
+    margin-top:30px;
+    margin-bottom: -20px;
+}
+.navi1{
+    margin-top:20px;
+    margin-bottom: -20px;
+}
+.titles{
+    margin-top:30px;
+    margin-bottom: -20px;
+    width: 200px;
 }
 
+.btn{
+    background-color: rgb(255, 187, 0);
+    border-color: rgb(255, 187, 0);
+    font-size: 18px;
+}
+.btn1{
+    margin-left: 50px;
+    background-color: red;
+    border-color: red;
+}
+.bbtn{
+    margin-left: 0px;
+    margin-top:20px;
+    margin-bottom: -20px;
+}
 /* ---------------------------------------------------
     CONTENT STYLE PROFILE
 ----------------------------------------------------- */
@@ -187,4 +242,74 @@ a.article, a.article:hover {
     margin-top: 70px;
     margin-left: 200px;
     background-color: rgb(255, 217, 0);
+}
+.txt{
+    width: 1100px;min-height: 250px;
+}
+.btn2{
+    width: 150px;padding-top: 10px;
+    background-color: rgb(255, 217, 0);
+}
+.inp{
+    margin-top:2px;
+}
+@media (min-width: 1000px){
+    body{
+        position: relative;
+        min-width: 100%;
+        height: 60rem;
+    }
+    .bbtn{
+        margin-left: 1100px;
+    }
+    
+}
+@media (max-width: 330px) {
+    body{
+        min-width: 19.8em;
+        min-height: 950px;
+    }
+    .card1{
+        width: 19rem; min-height: 40rem;margin-left: 6px;margin-top: -40px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: rgb(255, 217, 0);
+    }
+    .atname{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .navi1{
+        margin-top:-60px;
+        margin-bottom: 10px;
+        margin-left:150px;
+    }
+    .bbtn{
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 300px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 300px;
+    }
+    .btn2{
+        margin-left: 20px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+    .txt{
+        width: 271px;
+    }
+    .inp{
+        width: 271px;
+    }
 }

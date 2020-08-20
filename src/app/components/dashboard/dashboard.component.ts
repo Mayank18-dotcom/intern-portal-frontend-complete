@@ -1,13 +1,13 @@
-import { Component, OnInit , ViewEncapsulation, OnDestroy} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css'],
-  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit,OnDestroy {
+export class DashboardComponent implements OnInit {
   users:any
   tasks:Object;
   username:any;
@@ -22,6 +22,14 @@ export class DashboardComponent implements OnInit,OnDestroy {
     this.service.dashboard(this.username).subscribe(data=>{
       this.tasks = data;
       console.log(this.tasks);
+    },
+    (err)=>{
+      if(err instanceof HttpErrorResponse) {
+        if(err.status === 401){
+          this.rt.navigate(['/login'])
+          alert("You are not an authorised user.")
+        }
+      }
     })
   }
   loggout()
@@ -32,8 +40,5 @@ export class DashboardComponent implements OnInit,OnDestroy {
   dash()
   {
     this.rt.navigate(['/dashboard',{username:JSON.parse(this.yes)}])
-  }
-  ngOnDestroy() {
-
   }
 }

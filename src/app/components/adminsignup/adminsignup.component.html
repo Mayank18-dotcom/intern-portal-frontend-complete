@@ -1,6 +1,6 @@
 <body>
   <div class="container-shadow"></div>
-  <div class="container" style="height: 700px">
+  <div class="container" style="height: 750px">
     <div class="wrap" style="margin-top: -70px;">
       <div class="headings">
         <h1 style="text-align: center;color: whitesmoke;">SIGNUP</h1>
@@ -23,81 +23,14 @@
             <label>Email</label>
             <input type="email" name="email" id="email"  [(ngModel)]="registerAdminData.email" required>
           </div>
-          <button type="button" (click)="registerAdmin()" style="background-color: aliceblue;color: black;width: 100px;margin-left: 150px;font-size: 15px;">SIGNUP</button>
+          <button type="button" (click)="registerAdmin()" class="btnsign">SIGNUP</button>
         </form>
-        <label  style="margin-left: 50px;">Already Registered Account?</label>
-        <a routerLink="/adminlogin" style="margin-left: 160px;color: whitesmoke;font-size: 20px;">Login</a>
+        <br>
+        <label class="nyr">Already Have Account?</label>
+        <button type="button" routerLink="/adminlogin" class="log">Login</button>
       </div>
       <br>
     </div><br><br>
   </div>
 
 </body>
-
-<!--
-  <body>
-  <div class="container-shadow"></div>
-  <div class="container" style="height: 800px">
-    <div class="wrap" style="margin-top: -70px;">
-      <div class="headings">
-        <h1 style="text-align: center;color: whitesmoke;">SIGNUP</h1>
-      </div>
-      <div>
-        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" style="margin-top: -60px;">
-          
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
-            <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-                <div *ngIf="f.username.errors.required">Username is required</div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
-            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-                <div *ngIf="f.password.errors.required">Password is required</div>
-                <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="regno">Reg. No.</label>
-            <input type="text" formControlName="regno" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.regno.errors }" />
-            <div *ngIf="submitted && f.regno.errors" class="invalid-feedback">
-                <div *ngIf="f.regno.errors.required">regno is required</div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="options">options</label>
-            <input type="text" formControlName="options" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.options.errors }" />
-            <div *ngIf="submitted && f.options.errors" class="invalid-feedback">
-                <div *ngIf="f.options.errors.required">options is required</div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                <div *ngIf="f.email.errors.required">Email is required</div>
-            </div>
-        </div>
-          
-        <div class="form-group">
-          <button [disabled]="loading" class="btn btn-primary">Register</button>
-          <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
-          <a [routerLink]="['/login']" class="btn btn-link">Cancel</a>
-        </div>
-        </form>
-        <label routerLink="/login" style="margin-left: 50px;">Already Registered Account?</label>
-        <a routerLink="/login" style="margin-left: 160px;color: whitesmoke;font-size: 20px;">Login</a>
-      </div>
-      <br>
-    </div><br><br>
-  </div>
-
-</body>
--->

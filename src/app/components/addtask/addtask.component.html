@@ -1,67 +1,51 @@
 <body id="bo">
-    
     <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3 style="color: white;">INCEPTION WAVE</h3>
+        <nav class="navbar navbar-expand-lg navbar-light nnaavv" style="background-color: #F0F8FF;">
+            <a class="navbar-brand navi" routerLink="/"><img src="../../../assets/logo.png"width="80" height="80"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="margin-top:40px;">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav bbtn">
+                <button style="margin-top: 5px;" class="btn" routerLink="/adminprofile">PROFILE</button>
+                <button style="margin-top: 5px;" class="btn btn1" (click)="loggout()">LOGOUT</button>
+              </div>
             </div>
-
-            <ul class="list-unstyled components">
-                <li>
-                    <a (click)="dash()">Back to all tasks</a>
-                </li>
-                <li>
-                    <a routerLink="/adminprofile">Profile</a>
-                </li>
-                <li>
-                    <a onclick="alert('Chat not added')">CHAT</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <div id="content">
-            <div class="container-fluid">
-                <nav class="navbar navbar-light bg-light navv">
-                    <a class="navbar-brand" href="#">
-                      <img src="../../../assets/img.jpg" width="40" height="40" class="d-inline-block align-top" style="margin-left: 10px;margin-top: -10px;">
-                      <p class="navit">INCEPTION WAVE</p>
-                    </a>
-                    <a class="navbar-brand">
-                        <button style="margin-top: 5px;" class="btn" (click)="loggout()">LOGOUT</button>
-                    </a>
-                  </nav>
-                  <hr style="border: 1px black solid;margin-left: 35px;width: 1420px;">
-                <button type="button" id="sidebarCollapse" class="btn btn-info" style="margin-left: -10px;margin-top: 0px;">
-                	<i class="fas fa-align-left"></i>
-                </button>
-            </div>
-        <div class="card" style="width: 78rem; min-height: 42rem;margin-left: 240px;margin-top: -40px;">
-            <h1 style="text-align: center;margin-top: 20px;">Add new task</h1>
-            <div style="margin-top: 50px;">
-                <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
-                    <div class="card tname" style="width: 300px;border-color: white;">
-                        <label><b>Intern Name:</b></label>
-                        <input type="text" placeholder="Intern's Name" name="username" ngModel required>
-                    </div>
-                    <div class="card tname" style="width: 300px;border-color: white;">
-                        <label><b>Mentor ID:</b></label>
-                        <input type="text" placeholder="Enter your ID" name="options" ngModel required>
-                    </div>
-                    <div class="card tname" style="width: 300px;border-color: white;">
-                        <label><b>Task Name:</b></label>
-                        <input type="text" placeholder="TITLE" name="taskname" ngModel required>
-                    </div>
-                    <div class="card tname" style="width: 300px;border-color: white;">
-                        <label><b>End Date:</b></label>
-                        <input type="text" placeholder="DD/MM/YYYY" name="enddate" ngModel required>
-                    </div>
-                    <div class="card tname" style="width: 300px;border-color: white;">
-                        <label><b>Task Details:</b></label>
-                        <textarea style="width: 1100px;min-height: 250px;" name="taskdetails" ngModel required></textarea>
-                    </div>
-                    <p style="margin-top: 220px;"><button class="tname btn" type="submit" style="width: 150px;padding-top: 10px;">Add</button></p>
-                </form> 
-            </div>
+          </nav>
+        <br><br><br>
+        <div class="card card1">
+            <h1 class="hname">ADD NEW TASK</h1>
+            <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+                <div class="card tname">
+                    <label><b>Intern Name:</b></label>
+                    <input type="text" class="inp" placeholder="Intern's Name" name="username" ngModel ng-required="true">
+                </div>
+                <div class="card tname">
+                    <label><b>Mentor ID:</b></label>
+                    <input type="text" class="inp" placeholder="Enter your ID" name="options" ngModel ng-required="true">
+                </div>
+                <div class="card tname">
+                    <label><b>Task Name:</b></label>
+                    <input type="text" class="inp" placeholder="TITLE" name="taskname" ngModel ng-required="true">
+                </div>
+                <div class="card tname">
+                    <label><b>End Date:</b></label>
+                    <input type="text" class="inp" placeholder="DD/MM/YYYY" name="enddate" ngModel ng-required="true">
+                </div>
+                <div class="card tname">
+                    <label><b>Task Details:</b></label>
+                    <textarea class="txt" name="taskdetails" ngModel ng-required="true"></textarea>
+                </div>
+                <br>
+                <p style="margin-top: 220px;"><button class="tname btn btn2" type="submit" >Add</button></p>
+            </form> 
         </div>
     </div>
+    </body>
+
+
+
+
+
+
+    

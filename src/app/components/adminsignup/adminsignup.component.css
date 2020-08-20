@@ -8,6 +8,7 @@ body {
   background: #dbd1c7;
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  min-height: 800px;
 }
 
 a {
@@ -189,7 +190,15 @@ footer .fp a:hover {
 #sign-up-form {
   display: none;
 }
-
+.btnsign{
+  background-color: aliceblue;color: black;width: 100px;margin-left: 160px;font-size: 15px;
+}
+.nyr{
+  margin-left: 100px;
+}
+.log{
+  margin-left: 180px;color: whitesmoke;font-size: 15px;background-color: aliceblue;color: black;width: 70px;
+}
 @media (max-width: 524px) {
   .container-shadow {
     width: 400px;
@@ -233,7 +242,26 @@ footer .fp a:hover {
 }
 
 @media (max-width: 330px) {
+  body{
+    min-height: 680px;
+  }
+  .btnsign{
+    font-size: 15px;
+    margin-left: 80px;
+  }
   .wrap {
     width: 90%;
+  }
+  .nyr{
+    margin-left: 30px;
+    font-size: 12px;
+  }
+  .log{
+    margin-top: -10px;
+    margin-left: 95px;
+    background-color: aliceblue;color: black;width: 70px;font-size: 15px;
+  }
+  .container{
+    min-height: 600px;
   }
 }

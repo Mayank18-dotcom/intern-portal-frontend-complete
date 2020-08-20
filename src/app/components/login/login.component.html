@@ -1,7 +1,7 @@
     <div class="alert">
       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
       <strong style="margin-left: 20px;">
-        If already logged in: Click Here: <button type="button" (click)="allog()" style="float: right;margin-top: -5px;margin-right: 100px;background-color: white;">GO to Dashboard</button>
+        If already logged in: Click Here: <button type="button" (click)="allog()" class="altbtn" >GO to Dashboard</button>
       </strong>
     </div>
     <div class="container-shadow"></div>
@@ -21,11 +21,11 @@
               <input type="password" name="password" id="password"  [(ngModel)]="loginUserData.password" required>
             </div>
             <br><br>
-            <button type="button" (click)="loginUser()" style="background-color: aliceblue;color: black;width: 100px;margin-left: 150px;font-size: 15px;">Login</button>
+            <button type="button" (click)="loginUser()" class="logbtn">Login</button>
           </form>
           <br>
-          <label  style="margin-left: 90px;">Not Yet Registered?</label>
-          <a routerLink="/signup" style="margin-left: 160px;color: whitesmoke;font-size: 20px;">SIGNUP</a>
+          <label class="nyr">Not Yet Registered?</label>
+          <a routerLink="/signup" class="btnsign">SIGNUP</a>
         </div>
       </div>
     </div>

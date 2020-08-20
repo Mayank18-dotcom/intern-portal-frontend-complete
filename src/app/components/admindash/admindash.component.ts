@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 @Component({
   selector: 'app-admindash',
   templateUrl: './admindash.component.html',
@@ -21,7 +22,16 @@ export class AdmindashComponent implements OnInit {
     this.service.admindashboard(this.regno).subscribe(data=>{
       this.users1 = data;
       console.log(this.users1);
-    })
+    },
+    (err)=>{
+      if(err instanceof HttpErrorResponse) {
+        if(err.status === 401){
+          this.rt.navigate(['/adminlogin'])
+          alert("You are not an authorised user.")
+        }
+      }
+    }
+    )
   }
   eachint(uu){
     console.log(uu.username);

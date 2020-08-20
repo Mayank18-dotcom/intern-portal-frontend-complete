@@ -9,7 +9,6 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
-
 a {
   text-decoration: none;
 }
@@ -190,6 +189,27 @@ footer .fp a:hover {
   display: none;
 }
 
+.altbtn{
+  float: right;margin-top: -5px;margin-right: 100px;background-color: white;
+}
+.nyr{
+  margin-left: 100px;
+}
+.btnsign{
+  margin-left: 160px;color: whitesmoke;font-size: 20px;
+}
+.alert {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  margin-left: 230px;
+  width: 1230px;
+  margin-bottom: 40px;
+}
+.logbtn{
+  background-color: aliceblue;color: black;width: 100px;margin-left: 150px;font-size: 15px;
+}
+
 @media (max-width: 524px) {
   .container-shadow {
     width: 400px;
@@ -215,6 +235,24 @@ footer .fp a:hover {
 }
 
 @media (max-width: 399px) {
+  .alert{
+    width: 370px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .altbtn{
+    margin-right: 10px;
+  }
+  .logbtn{
+    margin-left:80px
+  }
+  .nyr{
+    margin-left: 30px;
+  }
+  .btnsign{
+    font-size: 15px;
+    margin-left: 100px;
+  }
   .container-shadow {
     width: 100%;
     margin: 0px;
@@ -233,8 +271,26 @@ footer .fp a:hover {
 }
 
 @media (max-width: 330px) {
+  .alert{
+    width: 320px;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  .altbtn{
+    margin-right: 10px;
+  }
   .wrap {
     width: 90%;
+  }
+  .logbtn{
+    margin-left:80px
+  }
+  .nyr{
+    margin-left: 30px;
+  }
+  .btnsign{
+    font-size: 15px;
+    margin-left: 100px;
   }
 }
 /*
@@ -380,14 +436,6 @@ a.article, a.article:hover {
 /* ---------------------------------------------------
     CONTENT STYLE DASH
 ----------------------------------------------------- */
-.alert {
-    padding: 10px;
-    background-color: green;
-    color: white;
-    margin-left: 230px;
-    width: 1230px;
-    margin-bottom: 40px;
-}
 .tname{
     width: 70rem;
     height: 3rem;
