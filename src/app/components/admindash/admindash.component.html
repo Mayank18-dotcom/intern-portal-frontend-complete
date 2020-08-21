@@ -15,6 +15,9 @@
         <br><br><br>
         <div class="card card1">
             <h1 class="hname">LIST OF INTERNS</h1>
+            <div *ngIf="users1.length === 0">
+              <h3 class="hname">No interns registerd under you!!!</h3>
+            </div>
             <div style="margin-top: 70px;">
                 <ul>
                     <li class="card tname"*ngFor="let user of users1"><a class="atname" (click)="eachint(user)"><b>{{user.username}}</b></a></li>

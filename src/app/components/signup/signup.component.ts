@@ -32,7 +32,8 @@ export class SignupComponent implements OnInit {
         window.localStorage.setItem('ue', JSON.stringify(res.user.email))
         window.localStorage.setItem('ureg', JSON.stringify(res.user.regno))
         window.localStorage.setItem('uopt', JSON.stringify(res.user.options))
-        this.router.navigate(['/dashboard'])
+        alert("SIGNUP WAS SUCCESSFULL !!!")
+        this.router.navigate(['/dashboard',{username:res.user.username}])
       },
       (err)=>{
         if(err instanceof HttpErrorResponse){

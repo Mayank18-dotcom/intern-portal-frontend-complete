@@ -25,6 +25,7 @@ export class AdminloginComponent implements OnInit {
         window.localStorage.setItem('un', JSON.stringify(res.admin.username))
         window.localStorage.setItem('ue', JSON.stringify(res.admin.email))
         window.localStorage.setItem('ureg',(res.admin.regno))
+        alert("LOGGIN WAS SUCCESSFULL !!!")
         this.router.navigate(['/admindash',{regno:res.admin.regno}])
       },
       (err)=>{

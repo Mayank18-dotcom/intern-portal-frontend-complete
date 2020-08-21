@@ -14,21 +14,25 @@
           </nav>
         <br><br><br>
         <div class="card card1">
-            <h1 class="hname">INTERNSHIP TASKS</h1>
+            <h1 class="hname">YOUR INTERNSHIP TASKS</h1>
             <div style="margin-top: 70px;">
-                <h3 class="hname">Completed TASKS</h3>
-                <ul *ngFor="let task of tasks">
-                    <div *ngIf="task.complete==='Completed'">
-                        <li class="card tname"><a class="atname" routerLink="/list/{{task._id}}"><b style="text-transform:capitalize;">{{task.taskname}}</b></a></li>
-                    </div>
-                </ul>
-                <h3 class="hname">Incomplete TASKS</h3>
+              <div *ngIf="tasks.length === 0">
+                <h3 class="hname">No Tasks assigned for you!!!</h3>
+              </div>
+              <div *ngIf="tasks.length > 0">
                 <ul *ngFor="let task of tasks">
                     <div *ngIf="task.complete==='Incomplete'">
-                        <li class="card tname"><a class="atname" routerLink="/list/{{task._id}}"><b style="text-transform:capitalize;">{{task.taskname}}</b></a></li>
+                        <li class="card tname fail"><a class="atname" routerLink="/list/{{task._id}}"><b style="text-transform:capitalize;">{{task.taskname}}</b></a></li>
                     </div>
                 </ul>
+                <br>
+                <ul *ngFor="let task of tasks">
+                  <div *ngIf="task.complete==='Completed'">
+                      <li class="card tname success"><a class="atname" routerLink="/list/{{task._id}}"><b style="text-transform:capitalize;">{{task.taskname}}</b></a></li>
+                  </div>
+              </ul>
                 <br><br>
+              </div>
             </div>
         </div>
     </div>
