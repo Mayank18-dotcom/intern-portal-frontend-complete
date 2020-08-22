@@ -158,7 +158,7 @@ a.article, a.article:hover {
 .tname{
     width: 35rem;
     height: 3rem;
-    margin-left: 400px;
+    margin-left: 500px;
     margin-top: 40px;
     background: #6190E8;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
@@ -171,14 +171,8 @@ a.article, a.article:hover {
     text-align: center;
 }
 .card1{
-    width: 89rem; min-height: 42rem;margin-left: 130px;margin-top: -40px;
-    background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-    
-
+    width: 105.5em; min-height: 42rem;margin-left: 0px;margin-top: -70px;
+    background: #6190E8;
 }
 .hname{
     text-align: center;margin-top: 20px;
@@ -268,12 +262,8 @@ background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, F
     }
 }
 @media (max-width: 330px) {
-    body{
-        min-width: 19.8em;
-        min-height: 41rem;
-    }
     .card1{
-        width: 19rem; min-height: 40rem;margin-left: 6px;margin-top: -40px;
+        width: 20rem; min-height: 40rem;margin-left: 0px;margin-top: -70px;
     }
     .tname{
     width: 17rem;

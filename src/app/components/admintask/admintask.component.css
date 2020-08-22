@@ -185,7 +185,7 @@ a.article, a.article:hover {
     border: 1px grey solid;
     width: 1000px;
     margin-top: 70px;
-    margin-left: 200px;
+    margin-left: 350px;
     background-color: rgb(255, 217, 0);
     font-size: 20px;
 }
@@ -193,16 +193,14 @@ a.article, a.article:hover {
     border: 1px black solid;margin-left: 35px;width: 1420px;
 }
 .card1{
-    width: 89rem; min-height: 42rem;margin-left: 130px;margin-top: -40px;
-    background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 106.65em; min-height: 47.5rem;margin-left: 0px;margin-top: -70px;
+    background: #6190E8;
 }
 .date{
-    float: left;margin-left: 100px;
+    float: left;margin-left: 250px;
 }
 .com{
-    float: right;margin-left: 1050px;margin-top: -40px;
+    float: right;margin-left: 1200px;margin-top: -40px;
 }
 .btn{
     background-color: rgb(255, 187, 0);
@@ -215,24 +213,22 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
     border-color: red;
 }
 .compt{
-    width: 150px;padding-top: 10px;margin-left: 510px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);
+    width: 150px;padding-top: 10px;margin-left: 650px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);
 }
 .stat{
-    width: 150px;padding-top: 10px;margin-left: 760px;background-color: red;margin-top: -48px;border-color: red;
+    width: 150px;padding-top: 10px;margin-left: 900px;background-color: red;margin-top: -48px;border-color: red;
+}
+.details{
+    margin-left: 40px;
+    width: 900px;
 }
 @media (max-width: 330px) {
-    body{
-        width: 320px;
-    }
-    .wrapper{
-       min-width: 320px;
-    }
     .hrs{
         margin-left: -20px;
         width: 280px;
     }
     .card1{
-        width: 20rem; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+        width: 20rem; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
     }
     .tname{
     width: 17rem;
@@ -280,6 +276,10 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
         margin-left: 50px;
         width: 300px;
         margin-bottom: 20px;
+    }
+    .details{
+        margin-left: 10px;
+        width: 280px;
     }
 }
 
