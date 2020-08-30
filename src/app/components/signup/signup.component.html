@@ -1,3 +1,4 @@
+<ngx-spinner></ngx-spinner>
 <body>
   <div class="container-shadow"></div>
   <div class="container" style="height: 830px">
@@ -23,18 +24,14 @@
             <label for="profs">Please Select a mentor:</label>
             <br>
             <select name="profs" id="profs" [(ngModel)]="registerUserData.options" ngModel ng-required="true" required>
-              <option style="font-size: 15px;" value="100503" name="options" >100503</option>
-              <option style="font-size: 15px;" value="100507" name="options" >100507</option>
-              <option style="font-size: 15px;" value="100511" name="options" >100511</option>
-              <option style="font-size: 15px;" value="100959" name="options" >100959</option>
-              <option style="font-size: 15px;" value="101296" name="options" >101296</option>
+              <option style="font-size: 15px;color: black;" value="{{admin.regno}}" name="options" *ngFor="let admin of admins">{{admin.regno}}</option>
             </select>
           </div>
           <div class="form-group">
             <label>Email</label>
             <input type="email" name="email" id="email" [(ngModel)]="registerUserData.email" ngModel [email]="true" ng-required="true" required>
           </div>
-          <button type="button" (click)="registerUser()" [disabled]="!form.valid" class="btnsign">SIGNUP</button>
+          <button type="button" (click)="registerUser()" class="btnsign">SIGNUP</button>
         </form>
         <label class="nyr">Already Registered Account?</label>
         <button type="button" routerLink="/login" class="log">Login</button>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import { Router } from '@angular/router';
 import {HttpErrorResponse} from '@angular/common/http';
+import { NgxSpinnerService } from "ngx-spinner";
 export class User {
   public username: any;
   public password: any;
@@ -17,33 +18,40 @@ export class LoginComponent implements OnInit {
   
   yes:any;
   yess:any;
-  constructor(private service:AppService,public router:Router) { }
+  constructor(private service:AppService,public router:Router,private spinner: NgxSpinnerService) { }
   loginUser () {
-    this.service.login(this.loginUserData)
-    .subscribe(
-      (res:any) => {
-        window.localStorage.setItem('token', res.token)
-        window.localStorage.setItem('un', JSON.stringify(res.user.username))
-        window.localStorage.setItem('ue', JSON.stringify(res.user.email))
-        window.localStorage.setItem('ureg', JSON.stringify(res.user.regno))
-        window.localStorage.setItem('uopt', JSON.stringify(res.user.options))
-        alert("LOGGIN WAS SUCCESSFULL !!!")
-        this.router.navigate(['/dashboard',{username:res.user.username}])
-      },
-      (err)=>{
-        if(err instanceof HttpErrorResponse){
-          if(err.status === 400){
-            console.log(err)
-            alert(err.error);
+    this.spinner.show();
+    setTimeout(()=>{
+      this.service.login(this.loginUserData)
+      .subscribe(
+        (res:any) => {
+          window.localStorage.setItem('token', res.token)
+          window.localStorage.setItem('un', JSON.stringify(res.user.username))
+          window.localStorage.setItem('ue', JSON.stringify(res.user.email))
+          window.localStorage.setItem('ureg', JSON.stringify(res.user.regno))
+          window.localStorage.setItem('uopt', JSON.stringify(res.user.options))
+          setTimeout(() => {
+            this.router.navigate(['/dashboard',{username:res.user.username}])
+            this.spinner.hide();
+          }, 4000);
+        },
+        (err)=>{
+          if(err instanceof HttpErrorResponse){
+            if(err.status === 400){
+              console.log(err)
+              alert(err.error);
+              this.spinner.hide();
+            }
+          }
+          if(err instanceof HttpErrorResponse) {
+            if(err.status === 401){
+              alert(err.error);
+              this.spinner.hide();
+            }
           }
         }
-        if(err instanceof HttpErrorResponse) {
-          if(err.status === 401){
-            alert(err.error);
-          }
-        }
-      }
-    ) 
+      ) 
+    },1000)
   }
   allog(){
     this.yes = this.service.getuserun()

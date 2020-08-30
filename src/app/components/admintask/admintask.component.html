@@ -14,7 +14,19 @@
         </div>
       </nav>
         <br><br><br>
-        <div class="card card1">
+        <div class="text-center">
+          <circle-progress *ngIf="loader"
+          [percent]="100"
+          [radius]="50"
+          [outerStrokeWidth]="8"
+          [innerStrokeWidth]="4"
+          [outerStrokeColor]="red"
+          innerStrokeColor="yellow"
+          [animation]="true"
+          [animationDuration]="10000"
+          ></circle-progress>
+        </div>
+        <div class="card card1" *ngIf="!loader">
             <h1 style="text-align: center;margin-top: 20px; text-transform:capitalize;">ABOUT {{task.taskname}}</h1>
             <h3 class="date">Deadline: {{task.enddate}}</h3>
             <h3 class="com">Status: {{task.complete}}</h3>

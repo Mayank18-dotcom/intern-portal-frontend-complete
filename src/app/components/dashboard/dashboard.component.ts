@@ -12,6 +12,7 @@ export class DashboardComponent implements OnInit {
   tasks:Object;
   username:any;
   yes:any;
+  loader = true;
   constructor(private service:AppService,public router:ActivatedRoute,public rt:Router) { 
     this.router.params.subscribe(params=>{
       this.username=params.username;
@@ -22,6 +23,7 @@ export class DashboardComponent implements OnInit {
     this.service.dashboard(this.username).subscribe(data=>{
       this.tasks = data;
       console.log(this.tasks);
+      this.loader = false;
     },
     (err)=>{
       if(err instanceof HttpErrorResponse) {

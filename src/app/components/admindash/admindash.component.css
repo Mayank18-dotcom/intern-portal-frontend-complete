@@ -7,6 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #6190E8;
+    min-height: 875px;
 }
 a, a:hover, a:focus {
     color: inherit;

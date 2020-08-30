@@ -12,6 +12,7 @@ export class AdmindashComponent implements OnInit {
   uu:any;
   regno:any;
   username:any;
+  loader = true;
   constructor(private service:AppService,public router:ActivatedRoute,public rt:Router) {
     this.router.params.subscribe(params=>{
       this.regno=params.regno;
@@ -20,6 +21,7 @@ export class AdmindashComponent implements OnInit {
    }
   ngOnInit():void {
     this.service.admindashboard(this.regno).subscribe(data=>{
+      this.loader = false;
       this.users1 = data;
       console.log(this.users1);
     },

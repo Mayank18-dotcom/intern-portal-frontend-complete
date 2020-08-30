@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-
+import {NgxSpinnerModule} from 'ngx-spinner';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { SignupComponent } from './components/signup/signup.component';
@@ -20,7 +20,7 @@ import { EachinternComponent } from './components/eachintern/eachintern.componen
 import { AdmintaskComponent } from './components/admintask/admintask.component';
 import { AddtaskComponent } from './components/addtask/addtask.component';
 import { AdminprofileComponent } from './components/adminprofile/adminprofile.component';
-
+import {NgCircleProgressModule} from 'ng-circle-progress';
 import { HttpClientModule, HttpClient,HTTP_INTERCEPTORS } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
@@ -52,11 +52,21 @@ import { from } from 'rxjs';
   ],
   imports: [
     BrowserModule,
+    NgxSpinnerModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgCircleProgressModule.forRoot({
+      radius:50,
+      outerStrokeWidth:8,
+      innerStrokeWidth:4,
+      outerStrokeColor:"red",
+      innerStrokeColor:"orange",
+      animationDuration:300
+    })
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AuthGuard,AdminauthGuard,
   {
     provide:HTTP_INTERCEPTORS,

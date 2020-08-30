@@ -5,12 +5,11 @@ import { users } from './users';
   providedIn: 'root'
 })
 export class AppService {
-
-  url:string="https://iwsc-backend.herokuapp.com";
+  //url:string="https://iwsc-backend.herokuapp.com";
+  url:string="http://localhost:3000";
 
   constructor(private http:HttpClient) { 
   }
-  
   signup(user)
   {
    return this.http.post(this.url+'/user/signup',user);
@@ -19,6 +18,9 @@ export class AppService {
   login(user)
   {
    return this.http.post(this.url+'/user/login',user);
+  }
+  alladmins(){
+    return this.http.get(this.url+'/alladmins');
   }
   dashboard(username:any)
   {

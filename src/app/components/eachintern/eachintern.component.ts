@@ -12,6 +12,7 @@ export class EachinternComponent implements OnInit {
   username:any;
   uu:any;
   U:any;
+  loader = true;
   constructor(private service:AppService,public router:ActivatedRoute,public rt:Router,private _location: Location) { 
     this.router.params.subscribe(params=>{
       this.username=params.username;
@@ -22,6 +23,7 @@ export class EachinternComponent implements OnInit {
     this.service.eachintern(this.username).subscribe(data=>{
       this.users1 = data;
       console.log(this.users1);
+      this.loader = false;
     })
   }
   eacht(uu){

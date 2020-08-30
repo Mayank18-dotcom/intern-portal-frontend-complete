@@ -10,6 +10,7 @@ import {Location} from '@angular/common';
 export class AdmintaskComponent implements OnInit {
   task:any;
   id:any;
+  loader = true;
   constructor(private rs:AppService,public router:ActivatedRoute, private rt:Router,private _location: Location) {
     this.router.params.subscribe(params=>{
       this.id=params.id;
@@ -21,6 +22,7 @@ export class AdmintaskComponent implements OnInit {
     this.rs.eachtask(this.id).subscribe(data=>{
       this.task = data;
       console.log(this.task);
+      this.loader = false;
     })
   }
   approve(id:any){

@@ -11,6 +11,7 @@ export class TasksComponent implements OnInit {
   task:any;
   id:any;
   yes:any;
+  loader = true;
   constructor(private rs:AppService,public router:ActivatedRoute,public rt:Router,private _location: Location) {
     this.router.params.subscribe(params=>{
       this.id=params.id;
@@ -23,6 +24,7 @@ export class TasksComponent implements OnInit {
     (
       (response)=>
       {
+        this.loader = false;
         console.log("for one",response)
         this.task = response;
       }
