@@ -27,6 +27,9 @@
         </div>
         <div class="card card1" *ngIf="!loader">
             <h1 class="hname">INTER'S TASKS</h1>
+            <div *ngIf="users1.length === 0">
+              <h3 class="hname">No tasks registerd for this user!!!</h3>
+            </div>
             <div style="margin-top: 70px;">
                 <ul>
                     <li class="card tname"*ngFor="let user of users1"><a class="atname" (click)="eacht(user)"><b class="at1">{{user.taskname}}</b><b class="at2"> {{user.complete}}</b></a></li>
