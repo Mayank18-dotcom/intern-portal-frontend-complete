@@ -41,13 +41,26 @@ export class AdminsignupComponent implements OnInit {
           if(err instanceof HttpErrorResponse){
             if(err.status === 400){
               console.log(err)
-              alert("Username already exists !!!");
-              alert("Also verify your RegNo. !!!");
+              alert("Please verify your RegNo. and try to change your Username");
               this.spinner.hide();
             }
           }
         }
       )
     },1000)
+  }
+  check(){
+    if(this.registerAdminData.regno==null){
+      alert("Register Number is Empty")
+    }if(this.registerAdminData.username==null){
+      alert("Username is Empty")
+    }if(this.registerAdminData.password==null){
+      alert("Password is Empty")
+    }if(this.registerAdminData.email==null){
+      alert("Email is Empty")
+    }
+    else{
+      this.registerAdmin()
+    }
   }
 }

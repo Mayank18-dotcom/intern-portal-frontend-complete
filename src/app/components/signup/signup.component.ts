@@ -50,8 +50,7 @@ export class SignupComponent implements OnInit {
           if(err instanceof HttpErrorResponse){
             if(err.status === 400){
               console.log(err)
-              alert("Username already exists !!!");
-              alert("Also verify your RegNo. !!!");
+              alert("Please verify your RegNo. and try to change your Username");
               this.spinner.hide();
             }
           }
@@ -59,17 +58,20 @@ export class SignupComponent implements OnInit {
       )
     },1000)
   }
+  check(){
+    if(this.registerUserData.regno==null){
+      alert("Register Number is Empty")
+    }if(this.registerUserData.username==null){
+      alert("Username is Empty")
+    }if(this.registerUserData.password==null){
+      alert("Password is Empty")
+    }if(this.registerUserData.options==null){
+      alert("Options is Empty")
+    }if(this.registerUserData.email==null){
+      alert("Email is Empty")
+    }
+    else{
+      this.registerUser()
+    }
+  }
 }
-
-/*
-this.service.signup(data).subscribe((result)=>{
-      if(result)
-      {
-        this.router.navigate(['/login']);
-      }
-      else{
-        console.log("Wrong Credentials");
-        this.router.navigate(['/signup']);
-      }
-    })
-    */
