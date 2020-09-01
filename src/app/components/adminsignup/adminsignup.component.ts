@@ -17,6 +17,7 @@ export class Admin {
 })
 export class AdminsignupComponent implements OnInit {
   registerAdminData = new Admin();
+  checkmail=/^([a-z 0-9 \.-]+)@([a-z 0-9 -]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
   constructor(private service:AppService,public router:Router,private spinner: NgxSpinnerService) { }
   
   ngOnInit() {
@@ -58,6 +59,8 @@ export class AdminsignupComponent implements OnInit {
       alert("Password is Empty")
     }if(this.registerAdminData.email==null){
       alert("Email is Empty")
+    }if(this.checkmail.test(this.registerAdminData.email)==false){
+      alert('Wrong Email Format')
     }
     else{
       this.registerAdmin()

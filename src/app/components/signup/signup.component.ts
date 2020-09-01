@@ -20,6 +20,7 @@ export class User {
 export class SignupComponent implements OnInit {
   registerUserData = new User();
   admins:any
+  checkmail=/^([a-z 0-9 \.-]+)@([a-z 0-9 -]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
   constructor(private service:AppService,public router:Router,private spinner: NgxSpinnerService) { }
   
   ngOnInit() {
@@ -69,6 +70,9 @@ export class SignupComponent implements OnInit {
       alert("Options is Empty")
     }if(this.registerUserData.email==null){
       alert("Email is Empty")
+    }
+    if(this.checkmail.test(this.registerUserData.email)==false){
+      alert('Wrong Email Format')
     }
     else{
       this.registerUser()
