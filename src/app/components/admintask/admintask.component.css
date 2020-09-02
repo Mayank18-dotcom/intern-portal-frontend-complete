@@ -221,7 +221,328 @@ a.article, a.article:hover {
     margin-left: 40px;
     width: 900px;
 }
+
+.imgg{
+    margin-left: -20px;margin-top: -10px;
+}
+.nnaavv{
+    margin-top:-40px;
+}
+.navi{
+    margin-top:30px;
+    margin-bottom: -20px;
+}
+.navi1{
+    margin-top:20px;
+    margin-bottom: -20px;
+}
+.titles{
+    margin-top:30px;
+    margin-bottom: -20px;
+    width: 200px;
+}
+
+
+.bbtn{
+    margin-top:20px;
+    margin-bottom: -20px;
+}
+
+@media (min-width: 1000px){
+    .bbtn{
+        margin-left: 1200px;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .hrs{
+        margin-left: -20px;
+        width: 280px;
+    }
+    .card1{
+        width: 375px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .atname{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 365px;
+        font-size: 15px;
+    }
+    .bbtn{
+        margin-left: -55px;
+        margin-bottom: 20px;
+    }
+    .btn{
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    
+    .date{
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 110px;
+        margin-bottom: 60px;
+    }
+    .com{
+        font-size: 15px;
+        margin-left: 110px;
+    }
+    .compt{
+        margin-left: 110px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);width: 150px;
+    }
+    .stat{
+        margin-left: 110px;background-color: red;border-color: red;width: 150px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .details{
+        margin-left: 10px;
+        width: 360px;
+    }
+}
+
+@media (max-width: 360px) {
+    .card1{
+        width: 360px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .atname{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 350px;
+        font-size: 15px;
+    }
+    
+    .date{
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 110px;
+        margin-bottom: 60px;
+    }
+    .com{
+        font-size: 15px;
+        margin-left: 110px;
+    }
+    .compt{
+        margin-left: 110px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);width: 150px;
+    }
+    .stat{
+        margin-left: 110px;background-color: red;border-color: red;width: 150px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .btn.btn1{
+        width: 350px;
+    }
+    .details{
+        margin-left: 10px;
+        width: 360px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .card1{
+        width: 360px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .atname{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 350px;
+        font-size: 15px;
+    }
+    
+    .date{
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 110px;
+        margin-bottom: 60px;
+    }
+    .com{
+        font-size: 15px;
+        margin-left: 110px;
+    }
+    .compt{
+        margin-left: 110px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);width: 150px;
+    }
+    .stat{
+        margin-left: 110px;background-color: red;border-color: red;width: 150px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .btn.btn1{
+        width: 350px;
+    }
+    .details{
+        margin-left: 10px;
+        width: 340px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .card1{
+        width: 350px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 340px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .btn.btn1{
+        width: 340px;
+    }
+    .details{
+        margin-left: 5px;
+        width: 330px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+    .date{
+        margin-left: 100px;
+    }
+    .com{
+        font-size: 15px;
+        margin-left: 100px;
+    }
+    .compt{
+        margin-left: 100px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);width: 150px;
+    }
+    .stat{
+        margin-left: 100px;background-color: red;border-color: red;width: 150px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .card1{
+        width: 340px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 330px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .btn.btn1{
+        width: 330px;
+    }
+    .details{
+        margin-left: 5px;
+        width: 320px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+    .date{
+        margin-left: 90px;
+    }
+    .com{
+        font-size: 15px;
+        margin-left: 90px;
+    }
+    .compt{
+        margin-left: 90px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);width: 150px;
+    }
+    .stat{
+        margin-left: 90px;background-color: red;border-color: red;width: 150px;
+    }
+}
+
+
 @media (max-width: 330px) {
+    .card1{
+        width: 330px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 320px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .btn.btn1{
+        width: 320px;
+    }
+    .details{
+        margin-left: 5px;
+        width: 310px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 320px) {
     .hrs{
         margin-left: -20px;
         width: 280px;
@@ -253,8 +574,11 @@ a.article, a.article:hover {
     .btn{
         font-size: 18px;
         margin-left: 50px;
+        width: 300px;
     }
-    
+    .btn.btn1{
+        width: 300px;
+    }
     .date{
         font-size: 15px;
         margin-top: 20px;
@@ -283,34 +607,139 @@ a.article, a.article:hover {
 }
 
 
-.imgg{
-    margin-left: -20px;margin-top: -10px;
-}
-.nnaavv{
-    margin-top:-40px;
-}
-.navi{
-    margin-top:30px;
-    margin-bottom: -20px;
-}
-.navi1{
-    margin-top:20px;
-    margin-bottom: -20px;
-}
-.titles{
-    margin-top:30px;
-    margin-bottom: -20px;
-    width: 200px;
-}
-
-
-.bbtn{
-    margin-top:20px;
-    margin-bottom: -20px;
-}
-
-@media (min-width: 1000px){
+@media (max-width: 310px) {
+    .card1{
+        width: 310px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 300px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .btn.btn1{
+        width: 300px;
+    }
+    .details{
+        margin-left: 5px;
+        width: 290px;
+    }
     .bbtn{
-        margin-left: 1100px;
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 300px) {
+    .card1{
+        width: 300px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 290px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 290px;
+        margin-bottom: 20px;
+    }
+    button.btn{
+        width: 290px;
+    }
+    .btn.btn1{
+        width: 290px;
+    }
+    .details{
+        margin-left: 5px;
+        width: 280px;
+    }
+}
+
+
+@media (max-width: 290px) {
+    .card1{
+        width: 290px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 280px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 280px;
+        margin-bottom: 20px;
+    }
+    .btn.btn1{
+        width: 280px;
+    }
+    .details{
+        margin-left: 5px;
+        width: 270px;
+    }
+    .date{
+        margin-left: 70px;
+    }
+    .com{
+        font-size: 15px;
+        margin-left: 80px;
+    }
+    .compt{
+        margin-left: 70px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);width: 150px;
+    }
+    .stat{
+        margin-left: 70px;background-color: red;border-color: red;width: 150px;
+    }
+    button.btn{
+        width: 280px;
+    }
+}
+
+
+@media (max-width: 280px) {
+    .card1{
+        width: 280px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .pfile{
+        padding-top: -50px;
+        margin-left: 5px;
+        width: 270px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 270px;
+        margin-bottom: 20px;
+    }
+    .btn.btn1{
+        width: 270px;
+    }
+    .details{
+        margin-left: 5px;
+        width: 270px;
+    }
+    .date{
+        margin-left: 70px;
+    }
+    .com{
+        font-size: 15px;
+        margin-left: 80px;
+    }
+    .compt{
+        margin-left: 70px;background-color: rgb(57, 201, 57);border-color: rgb(57, 201, 57);width: 150px;
+    }
+    .stat{
+        margin-left: 70px;background-color: red;border-color: red;width: 150px;
+    }
+    button.btn{
+        width: 270px;
     }
 }

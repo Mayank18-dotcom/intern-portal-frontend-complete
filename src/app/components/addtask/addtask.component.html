@@ -15,29 +15,31 @@
         <br><br><br>
         <div class="card card1">
             <h1 class="hname">ADD NEW TASK</h1>
-            <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
-                <div class="card tname">
+            <form class="form">
+                <div class="card tname form-group">
                     <label><b>Intern Name:</b></label>
-                    <input type="text" class="inp" placeholder="Intern's Name" name="username" ngModel ng-required="true">
+                    <input type="text" class="inp" placeholder="Intern's Name" name="username" [(ngModel)]="newTask.username" ng-required="true">
                 </div>
-                <div class="card tname">
+                <div class="card tname form-group">
                     <label><b>Mentor ID:</b></label>
-                    <input type="text" class="inp" placeholder="Enter your ID" name="options" ngModel ng-required="true">
+                    <input type="number" class="inp" placeholder="Enter your ID" name="options" [(ngModel)]="newTask.options" ng-required="true">
                 </div>
-                <div class="card tname">
+                <div class="card tname form-group">
                     <label><b>Task Name:</b></label>
-                    <input type="text" class="inp" placeholder="TITLE" name="taskname" ngModel ng-required="true">
+                    <input type="text" class="inp" placeholder="TITLE" name="taskname" [(ngModel)]="newTask.taskname" ng-required="true">
                 </div>
-                <div class="card tname">
+                <div class="card tname form-group">
                     <label><b>End Date:</b></label>
-                    <input type="text" class="inp" placeholder="DD/MM/YYYY" name="enddate" ngModel ng-required="true">
+                    <input type="text" class="inp" placeholder="DD/MM/YYYY" name="enddate" [(ngModel)]="newTask.enddate" ng-required="true">
                 </div>
-                <div class="card tname">
+                <div class="card tname form-group">
                     <label><b>Task Details:</b></label>
-                    <textarea class="txt" name="taskdetails" ngModel ng-required="true"></textarea>
+                    <textarea class="txt" name="taskdetails" [(ngModel)]="newTask.taskdetails" ng-required="true"></textarea>
                 </div>
                 <br>
-                <p style="margin-top: 220px;"><button class="tname btn btn2" type="submit" >Add</button></p>
+                <p style="margin-top: 220px;">
+                    <button type="button" (click)="check()" class="btn btn2">ADD TASK</button>
+                </p>
             </form> 
         </div>
     </div>

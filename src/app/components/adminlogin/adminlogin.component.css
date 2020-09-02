@@ -210,6 +210,7 @@ footer .fp a:hover {
   background-color: aliceblue;color: black;width: 100px;margin-left: 150px;font-size: 15px;
 }
 
+
 @media (max-width: 524px) {
   .container-shadow {
     width: 400px;
@@ -236,12 +237,11 @@ footer .fp a:hover {
 
 @media (max-width: 399px) {
   .alert{
-    width: 370px;
+    width: 320px;
     margin-left: 0px;
     font-size: 12px;
   }
   .altbtn{
-    margin-top: -2px;
     margin-right: 10px;
   }
   .logbtn{
@@ -271,6 +271,36 @@ footer .fp a:hover {
   }
 }
 
+@media (max-width: 375px){
+  .alert{
+    width: 375px;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 360px){
+  .alert{
+    width: 360px;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px){
+  .alert{
+    width: 350px;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 340px){
+  .alert{
+    width: 340px;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+}
+
+
 @media (max-width: 330px) {
   .alert{
     width: 320px;
@@ -278,8 +308,8 @@ footer .fp a:hover {
     font-size: 10px;
   }
   .altbtn{
-    margin-top:-2px;
-    margin-right: 0px;
+    margin-top: -2px;
+    margin-right: 10px;
   }
   .wrap {
     width: 90%;
@@ -295,9 +325,57 @@ footer .fp a:hover {
     margin-left: 100px;
   }
 }
-/*
-    DEMO STYLE
-*/
+
+@media (max-width: 320){
+  .alert{
+    width: 320;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+  .btnsign{
+    font-size: 10px;
+    margin-left: 100px;
+  }
+  .btn.altbtn{
+    width: 20px;
+  }
+}
+
+@media (max-width: 310){
+  .alert{
+    width: 310px;
+    margin-left: 0px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 300px){
+  .alert{
+    width: 300px;
+    margin-left: 0px;
+    font-size: 9px;
+  }
+}
+@media (max-width: 290px){
+  .alert{
+    width: 290px;
+    margin-left: 0px;
+    font-size: 8px;
+  }
+}
+@media (max-width: 280px){
+  .alert{
+    width: 280px;
+    margin-left: 0px;
+    font-size: 7px;
+  }
+  label.nyr{
+    font-size: 10px;
+    margin-left: -5px;
+    padding-left: 70px;
+    width: 260px;
+  }
+}
+
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
@@ -305,169 +383,4 @@ a, a:hover, a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
-}
-
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-#sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -5px;
-    min-height: 47rem;
-    z-index: 999;
-    background: rgb(255, 187, 0);
-    color: black;
-    transition: all 0.3s;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #0e0e0f;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-#sidebar ul li a:hover {
-    color: rgb(255, 187, 0);
-    background: #fff;
-}
-
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
-}
-
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
-    display: block;
-    position: absolute;
-    right: 20px;
-    font-family: 'Glyphicons Halflings';
-    font-size: 0.6em;
-}
-a[aria-expanded="true"]::before {
-    content: '\e260';
-}
-
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-a.download {
-    background: #fff;
-    color: rgb(255, 187, 0);
-}
-a.article, a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
-
-
-/* ---------------------------------------------------
-    CONTENT STYLE BOTH
------------------------------------------------------ */
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.btn{
-    background-color: rgb(255, 187, 0);
-    border-color: rgb(255, 187, 0);
-}
-
-.navv{
-    background-color: white;
-    margin-top: -10px;
-    padding: 0%;
-    margin-left: 230px;
-    width: 1230px;
-}
-.navit{
-    margin-top: -31px;
-    margin-left: 55px;
-    margin-bottom: -5px;
-    font-size: 16px;
-}
-
-/* ---------------------------------------------------
-    CONTENT STYLE DASH
------------------------------------------------------ */
-.tname{
-    width: 70rem;
-    height: 3rem;
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
-.atname{
-    margin-top: 10px;
-    margin-left: 50px;
-}
-
-/* ---------------------------------------------------
-    CONTENT STYLE PROFILE
------------------------------------------------------ */
-
-.pfile{
-    text-align: center;
-    border: 1px grey solid;
-    width: 700px;
-    margin-top: 70px;
-    margin-left: 370px;
-    background-color: rgb(255, 217, 0);
-}
-
-/* ---------------------------------------------------
-    CONTENT STYLE TASKS
------------------------------------------------------ */
-
-.pfile1{
-    text-align: center;
-    border: 1px grey solid;
-    width: 1000px;
-    margin-top: 70px;
-    margin-left: 200px;
-    background-color: rgb(255, 217, 0);
 }

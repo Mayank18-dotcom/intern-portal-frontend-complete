@@ -199,6 +199,7 @@ footer .fp a:hover {
 .log{
   margin-left: 180px;color: whitesmoke;font-size: 15px;background-color: aliceblue;color: black;width: 70px;
 }
+
 @media (max-width: 524px) {
   .container-shadow {
     width: 400px;
@@ -239,11 +240,34 @@ footer .fp a:hover {
   .wrap {
     width: 80%;
   }
+  body{
+    min-height: 680px;
+  }
+  .btnsign{
+    font-size: 15px;
+    margin-left: 80px;
+  }
+  .nyr{
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .log{
+    margin-top: -10px;
+    margin-left: 95px;
+    background-color: aliceblue;color: black;width: 70px;font-size: 15px;
+  }
+  .container{
+    min-height: 600px;
+  }
+  #profs{
+    margin-left: 60px;
+  }
 }
 
 @media (max-width: 330px) {
   body{
-    height: 500px;
+    height: 880px;
     background: linear-gradient(90deg, #29323c 0%, #3b4249 100%)
   }
   .btnsign{
@@ -254,7 +278,8 @@ footer .fp a:hover {
     width: 90%;
   }
   .nyr{
-    margin-left: 30px;
+    text-align: center;
+    margin-left: 10px;
     font-size: 12px;
   }
   .log{
@@ -264,5 +289,8 @@ footer .fp a:hover {
   }
   .container{
     min-height: 600px;
+  }
+  #profs{
+    margin-left: 60px;
   }
 }

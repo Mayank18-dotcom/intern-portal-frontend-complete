@@ -215,6 +215,9 @@ background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, F
     margin-top:20px;
     margin-bottom: -20px;
 }
+.btn.btn2{
+    margin-left: 50px;
+}
 /* ---------------------------------------------------
     CONTENT STYLE PROFILE
 ----------------------------------------------------- */
@@ -255,18 +258,20 @@ background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, F
 }
 @media (min-width: 1000px){
     .bbtn{
-        margin-left: 1100px;
+        margin-left: 1200px;
     }
     
 }
-@media (max-width: 330px) {
+
+
+@media (max-width: 375px) {
     .card1{
-        width: 20rem; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+        width: 375px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
     }
     .tname{
     width: 17rem;
     height: 3rem;
-    margin-left: 25px;
+    margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 30px;
     background-color: rgb(255, 217, 0);
@@ -286,14 +291,14 @@ background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, F
     }
     .btn{
         margin-left: -5px;
-        width: 300px;
+        width: 360px;
     }
     .btn1{
         margin-left: -5px;
-        width: 300px;
+        width: 360px;
     }
     .btn2{
-        margin-left: 25px;
+        margin-left: 50px;
         background-color: rgb(255, 217, 0);
         width: 200px;
     }
@@ -302,5 +307,306 @@ background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, F
     }
     .inp{
         width: 274px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .card1{
+        width: 360px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: rgb(255, 217, 0);
+    }
+    .atname{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .navi1{
+        margin-top:-60px;
+        margin-bottom: 10px;
+        margin-left:150px;
+    }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 350px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 350px;
+    }
+    .btn2{
+        margin-left: 50px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+    .txt{
+        width: 274px;
+    }
+    .inp{
+        width: 274px;
+    }
+}
+
+@media (max-width: 350px) {
+    .card1{
+        width: 350px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+        margin-left: 40px;
+        }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 340px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 340px;
+    }
+    .btn2{
+        margin-left: 40px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .card1{
+        width: 340px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+        margin-left: 35px;
+        }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 330px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 330px;
+    }
+    .btn2{
+        margin-left: 40px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 330px) {
+    .card1{
+        width: 330px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+        margin-left: 30px;
+        }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 320px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 320px;
+    }
+    .btn2{
+        margin-left: 40px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card1{
+        width: 320px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+        width: 255px;
+        margin-left: 20 px;
+        }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 310px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 310px;
+    }
+    .btn2{
+        margin-left: 35px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+    .card1.tname{
+        margin-left: -10px;
+    }
+    .txt{
+        width: 255px;
+    }
+    .inp{
+        width: 255px;
+    }
+    label{
+        width: 255px;
+    }
+}
+
+
+@media (max-width: 310px) {
+    .card1{
+        width: 310px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+        margin-left: -10 px;
+        }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 300px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 300px;
+    }
+    .btn2{
+        margin-left: 35px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+}
+
+@media (max-width: 300px) {
+    .card1{
+        width: 300px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+        margin-left: 20 px;
+        width: 250px;
+        }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 290px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 290px;
+    }
+    .btn2{
+        margin-left: 35px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+    .txt{
+        width: 250px;
+    }
+    .inp{
+        width: 250px;
+    }
+    label{
+        width: 250px;
+    }
+}
+
+@media (max-width: 290px) {
+    .card1{
+        width: 290px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+        margin-left: 25 px;
+        width: 240px;
+        }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 280px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 280px;
+    }
+    .btn2{
+        margin-left: 35px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+    .txt{
+        width: 240px;
+    }
+    .inp{
+        width: 240px;
+    }
+    label{
+        width: 240px;
+    }
+}
+
+@media (max-width: 280px) {
+    .card1{
+        width: 280px; min-height: 36.8rem;margin-left: 0px;margin-top: -70px;
+    }
+    .tname{
+        margin-left: 25 px;
+        width: 230px;
+        }
+    .bbtn{
+        margin-left: -5px;
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin-left: -5px;
+        width: 270px;
+    }
+    .btn1{
+        margin-left: -5px;
+        width: 270px;
+    }
+    .btn2{
+        margin-left: 35px;
+        background-color: rgb(255, 217, 0);
+        width: 200px;
+    }
+    .txt{
+        width: 230px;
+    }
+    .inp{
+        width: 230px;
+    }
+    label{
+        width: 230px;
     }
 }

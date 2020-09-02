@@ -26,6 +26,6 @@ export class AdminprofileComponent implements OnInit {
   loggout()
   {
     localStorage.clear();
-    this.router.navigate(['/login'])
+    this.router.navigate(['/adminlogin'])
   }
 }

@@ -281,3 +281,286 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
         margin-left: 1190px;
     }
 }
+
+
+@media (max-width: 376px) {
+    .hrs{
+        margin-left: -20px;
+        width: 280px;
+    }
+    .card1{
+        width: 375px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .atname{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 365px;
+        font-size: 15px;
+    }
+    .bbtn{
+        margin-left: -55px;
+        margin-bottom: 20px;
+    }
+    .btn{
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 361px) {
+    .card1{
+        width: 360px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 350px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    .bbtn{
+        margin-left: -60px;
+    }
+}
+
+@media (max-width: 351px) {
+    .card1{
+        width: 350px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 340px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 340px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 341px) {
+    .card1{
+        width: 340px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 330px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 330px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 331px) {
+    .card1{
+        width: 330px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 320px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 321px) {
+    .hrs{
+        margin-left: -20px;
+        width: 280px;
+    }
+    .card1{
+        width: 20rem; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .atname{
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 305px;
+        font-size: 15px;
+    }
+    .bbtn{
+        margin-left: -55px;
+        margin-bottom: 20px;
+    }
+    .btn{
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 311px) {
+    .card1{
+        width: 310px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 300px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 301px) {
+    .card1{
+        width: 300px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 290px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 291px) {
+    .card1{
+        width: 290px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 280px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 280px;
+        margin-bottom: 20px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 281px) {
+    .card1{
+        width: 280px; min-height: 40rem;margin-left: 0px;margin-top: 10px;
+    }
+    .tname{
+    width: 17rem;
+    height: 3rem;
+    margin-left: -20px;
+    margin-top: 10px;
+    background-color: rgb(255, 217, 0);
+    }
+    .pfile{
+        margin-left: 5px;
+        width: 270px;
+        font-size: 15px;
+    }
+    .btn1{
+        margin-left: 50px;
+        width: 270px;
+        margin-bottom: 20px;
+    }
+    .bbtn{
+        margin-left: -60px;
+        margin-bottom: 20px;
+    }
+}
