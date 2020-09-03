@@ -267,50 +267,167 @@ a.animated-button.thar-three:before {
     left: 40px;
   }
 }
- @media only screen and (max-width: 330px){
-   .btn{
-     position: relative;
-     left: 160px;
-   }
-   h2{
-     position: relative;
-     right: 150px;
-   }
+
+
+@media (max-width: 375px){
+  .btn{
+    position: relative;
+    left: 160px;
+  }
+  h2{
+    position: relative;
+    right: 150px;
+  }
+  .iimg{
+   width: 300px;
+   height: 300px;
+   margin-left: -10px;
+   margin-top: -50px;
+ }
+ .hed{
+   margin-top: -20px;
+   margin-left: -40px;
+   
+ }
+ .banner-text h2{
+   margin-top: 70px;
+   margin-left: 0px;
+   width: 300px;
+   font-size: 25px;
+ }
+ .b1{
+   margin-left:-100px;
+   width: 50px;
+ }
+ .b2{
+   margin-left:100px;
+   width: 50px;
+ }
+ a.animated-button.thar-three{
+   padding-left: 30px;
+   padding-right: 80px;
+ }
+ .animation-area{
+   height: 100%;
+   margin-bottom: -100px;
+ }
+ .btns{
+   margin-top: -100px;
+   margin-left: -300px;
+ }
+}
+
+
+@media (max-width: 360px){
+  .iimg{
+   margin-left: -10px;
+ }
+ .banner-text h2{
+   margin-top: 70px;
+   margin-left: -10px;
+   width: 300px;
+   font-size: 25px;
+ }
+ .b1{
+   margin-left:-110px;
+   width: 50px;
+ }
+}
+
+@media (max-width: 340px){
+  .iimg{
+   margin-left: -10px;
+ }
+ .banner-text h2{
+   margin-top: 70px;
+   margin-left: -20px;
+   width: 300px;
+   font-size: 25px;
+ }
+ .b1{
+   margin-left:-120px;
+   width: 50px;
+ }
+}
+
+ @media (max-width: 330px){
    .iimg{
     width: 300px;
     height: 300px;
     margin-left: -20px;
     margin-top: -50px;
   }
-  .hed{
-    margin-top: -20px;
-    margin-left: -40px;
-    
-  }
-  .banner-text h2{
-    margin-top: 70px;
-    margin-left: -30px;
-    width: 300px;
-    font-size: 25px;
-  }
   .b1{
     margin-left:-130px;
     width: 50px;
   }
-  .b2{
-    margin-left:100px;
-    width: 50px;
-  }
-  a.animated-button.thar-three{
-    padding-left: 30px;
-    padding-right: 80px;
-  }
-  .animation-area{
-    height: 100%;
-    margin-bottom: -100px;
-  }
-  .btns{
-    margin-top: -100px;
-    margin-left: -300px;
-  }
+}
+
+@media (max-width: 320px){
+  .iimg{
+   margin-left: -10px;
+ }
+ .banner-text h2{
+   margin-top: 70px;
+   margin-left: -30px;
+   width: 300px;
+   font-size: 25px;
+ }
+ .b1{
+   margin-left:-130px;
+   width: 50px;
+ }
+}
+
+@media (max-width: 300px){
+  .iimg{
+   margin-left: -10px;
+ }
+ .banner-text h2{
+   margin-top: 70px;
+   margin-left: -40px;
+   width: 300px;
+   font-size: 25px;
+ }
+ .b1{
+   margin-left:-140px;
+   width: 50px;
+ }
+}
+
+@media (max-width: 290px){
+  .iimg{
+   margin-left: -10px;
+ }
+ .banner-text h2{
+   margin-top: 70px;
+   margin-left: -50px;
+   width: 300px;
+   font-size: 18px;
+ }
+ .b1{
+   margin-left:-150px;
+   width: 50px;
+ }
+}
+
+@media (max-width: 280px){
+  .iimg{
+   margin-left: -10px;
+ }
+ .banner-text h2{
+   margin-top: 70px;
+   margin-left: -50px;
+   width: 300px;
+   font-size: 18px;
+ }
+ .b1{
+   font-size: 18px;
+   margin-left:-150px;
+   width: 40px;
+ }
+ .b2{
+  font-size: 18px;
+  width: 40px;
+}
 }

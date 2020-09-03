@@ -360,6 +360,12 @@ footer .fp a:hover {
     margin-left: 0px;
     font-size: 8px;
   }
+  label.nyr{
+    font-size: 10px;
+    margin-left: -5px;
+    padding-left: 70px;
+    width: 260px;
+  }
 }
 @media (max-width: 280px){
   .alert{

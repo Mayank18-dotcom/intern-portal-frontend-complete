@@ -9,7 +9,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class DashboardComponent implements OnInit {
   users:any
-  tasks:Object;
+  tasks:any;
   username:any;
   yes:any;
   loader = true;
